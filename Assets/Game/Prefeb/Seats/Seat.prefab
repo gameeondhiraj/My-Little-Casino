@@ -248,10 +248,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LockedObject: {fileID: 6741930057018062565}
-  particalEffect: {fileID: 5773661403882390274, guid: b5c085565fbc10c4fb21c21ecca6d93e, type: 3}
+  unlockPartical: {fileID: 5773661403882390274, guid: b5c085565fbc10c4fb21c21ecca6d93e, type: 3}
   cashCounter: {fileID: 3578881966378085990}
   unlockingAmount: 90
-  reduceAmountSpeed: 5
+  reduceAmountSpeed: 20
   UnlockedObject: {fileID: 1196765885399291709}
   isPlayerNear: 0
 --- !u!54 &7126957285871719305

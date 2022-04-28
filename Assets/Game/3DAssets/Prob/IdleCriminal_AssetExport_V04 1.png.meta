@@ -1,0 +1,1200 @@
+fileFormatVersion: 2
+guid: 62f8bf62f795c6a46864efbbe7f94c2a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7945690426205569931
+    second: IdleCriminal_AssetExport_V04 1_0
+  - first:
+      213: 5843848028739608075
+    second: IdleCriminal_AssetExport_V04 1_1
+  - first:
+      213: 1884456843944246040
+    second: IdleCriminal_AssetExport_V04 1_2
+  - first:
+      213: -4806669688120310156
+    second: IdleCriminal_AssetExport_V04 1_3
+  - first:
+      213: 1165352664710596633
+    second: IdleCriminal_AssetExport_V04 1_4
+  - first:
+      213: -7334622893485729878
+    second: IdleCriminal_AssetExport_V04 1_5
+  - first:
+      213: -7237262180820081349
+    second: IdleCriminal_AssetExport_V04 1_6
+  - first:
+      213: -2877364029403541738
+    second: IdleCriminal_AssetExport_V04 1_7
+  - first:
+      213: -8898496130456382547
+    second: IdleCriminal_AssetExport_V04 1_8
+  - first:
+      213: 6408518211018068532
+    second: IdleCriminal_AssetExport_V04 1_9
+  - first:
+      213: -8266545710485424367
+    second: IdleCriminal_AssetExport_V04 1_10
+  - first:
+      213: -7577418826293094582
+    second: IdleCriminal_AssetExport_V04 1_11
+  - first:
+      213: -2031982937155437660
+    second: IdleCriminal_AssetExport_V04 1_12
+  - first:
+      213: 7694671346306429121
+    second: IdleCriminal_AssetExport_V04 1_13
+  - first:
+      213: -5045669986779072273
+    second: IdleCriminal_AssetExport_V04 1_14
+  - first:
+      213: 7554176154663779475
+    second: IdleCriminal_AssetExport_V04 1_15
+  - first:
+      213: 1529210905674530021
+    second: IdleCriminal_AssetExport_V04 1_16
+  - first:
+      213: -6701399642311991479
+    second: IdleCriminal_AssetExport_V04 1_17
+  - first:
+      213: 7536453195261082794
+    second: IdleCriminal_AssetExport_V04 1_18
+  - first:
+      213: -8052354278337316130
+    second: IdleCriminal_AssetExport_V04 1_19
+  - first:
+      213: 5778592821086394915
+    second: IdleCriminal_AssetExport_V04 1_20
+  - first:
+      213: 602088777752156562
+    second: IdleCriminal_AssetExport_V04 1_21
+  - first:
+      213: -1078572835698547945
+    second: IdleCriminal_AssetExport_V04 1_22
+  - first:
+      213: -48893216768653038
+    second: IdleCriminal_AssetExport_V04 1_23
+  - first:
+      213: -527072338247506136
+    second: IdleCriminal_AssetExport_V04 1_24
+  - first:
+      213: -7799516888036642777
+    second: IdleCriminal_AssetExport_V04 1_25
+  - first:
+      213: 5620797303626089203
+    second: IdleCriminal_AssetExport_V04 1_26
+  - first:
+      213: -3907143124773762726
+    second: IdleCriminal_AssetExport_V04 1_27
+  - first:
+      213: -5288898109595573902
+    second: IdleCriminal_AssetExport_V04 1_28
+  - first:
+      213: -684416840640938984
+    second: IdleCriminal_AssetExport_V04 1_29
+  - first:
+      213: -942026212809989351
+    second: IdleCriminal_AssetExport_V04 1_30
+  - first:
+      213: -8059261855050159180
+    second: IdleCriminal_AssetExport_V04 1_31
+  - first:
+      213: -3645584762945982256
+    second: IdleCriminal_AssetExport_V04 1_32
+  - first:
+      213: -3473654780629201022
+    second: IdleCriminal_AssetExport_V04 1_33
+  - first:
+      213: 1401602622461703419
+    second: IdleCriminal_AssetExport_V04 1_34
+  - first:
+      213: 548201264401166163
+    second: IdleCriminal_AssetExport_V04 1_35
+  - first:
+      213: -139652394984494345
+    second: IdleCriminal_AssetExport_V04 1_36
+  - first:
+      213: -279166036727922019
+    second: IdleCriminal_AssetExport_V04 1_37
+  - first:
+      213: 4203147539980678541
+    second: IdleCriminal_AssetExport_V04 1_38
+  - first:
+      213: -7330702948433311077
+    second: IdleCriminal_AssetExport_V04 1_39
+  - first:
+      213: -3851586320994852515
+    second: IdleCriminal_AssetExport_V04 1_40
+  - first:
+      213: 8515655925210249843
+    second: IdleCriminal_AssetExport_V04 1_41
+  - first:
+      213: 1377590010947513713
+    second: IdleCriminal_AssetExport_V04 1_42
+  - first:
+      213: 8431864943943126036
+    second: IdleCriminal_AssetExport_V04 1_43
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 2
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: IdleCriminal_AssetExport_V04 1_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 764
+        width: 518
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57c7bcac7ac3bb190800000000000000
+      internalID: -7945690426205569931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleCriminal_AssetExport_V04 1_1
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 782
+        width: 151
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0e1462f1d4891150800000000000000
+      internalID: 5843848028739608075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleCriminal_AssetExport_V04 1_2
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 782
+        width: 219
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81bb9d9e38fe62a10800000000000000
+      internalID: 1884456843944246040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleCriminal_AssetExport_V04 1_3
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 804
+        width: 97
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47683fea2674b4db0800000000000000
+      internalID: -4806669688120310156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleCriminal_AssetExport_V04 1_4
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 698
+        width: 41
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9184122031a2c2010800000000000000
+      internalID: 1165352664710596633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleCriminal_AssetExport_V04 1_5
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 698
+        width: 41
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa7d550c65f263a90800000000000000
+      internalID: -7334622893485729878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleCriminal_AssetExport_V04 1_6
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 698
+        width: 41
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b35a9d52464109b90800000000000000
+      internalID: -7237262180820081349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleCriminal_AssetExport_V04 1_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 683
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61f4ae109ac8118d0800000000000000
+      internalID: -2877364029403541738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleCriminal_AssetExport_V04 1_8
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 686
+        width: 35
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da395f46ae0328480800000000000000
+      internalID: -8898496130456382547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleCriminal_AssetExport_V04 1_9
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 687
+        width: 13
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4329a50fb51afe850800000000000000
+      internalID: 6408518211018068532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleCriminal_AssetExport_V04 1_10
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 687
+        width: 13
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 117bcfe6974574d80800000000000000
+      internalID: -8266545710485424367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleCriminal_AssetExport_V04 1_11
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 686
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a47517079b997d690800000000000000
+      internalID: -7577418826293094582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleCriminal_AssetExport_V04 1_12
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 528
+        width: 196
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4abf139d842fcc3e0800000000000000
+      internalID: -2031982937155437660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleCriminal_AssetExport_V04 1_13
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 528
+        width: 267
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c0b8f342d6f8ca60800000000000000
+      internalID: 7694671346306429121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleCriminal_AssetExport_V04 1_14
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 538
+        width: 132
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe8fe2051ed2af9b0800000000000000
+      internalID: -5045669986779072273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleCriminal_AssetExport_V04 1_15
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 538
+        width: 132
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39cf57d5033d5d860800000000000000
+      internalID: 7554176154663779475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleCriminal_AssetExport_V04 1_16
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 536
+        width: 131
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ec32637739d83510800000000000000
+      internalID: 1529210905674530021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleCriminal_AssetExport_V04 1_17
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 547
+        width: 109
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94f5016e788dff2a0800000000000000
+      internalID: -6701399642311991479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleCriminal_AssetExport_V04 1_18
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 480
+        width: 37
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aacf4e1504cd69860800000000000000
+      internalID: 7536453195261082794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleCriminal_AssetExport_V04 1_19
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 396
+        width: 258
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eda7b12727a404090800000000000000
+      internalID: -8052354278337316130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleCriminal_AssetExport_V04 1_20
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 392
+        width: 113
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32a1a72fd8fa13050800000000000000
+      internalID: 5778592821086394915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleCriminal_AssetExport_V04 1_21
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 404
+        width: 105
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2999a29ad8c0b5800800000000000000
+      internalID: 602088777752156562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleCriminal_AssetExport_V04 1_22
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 415
+        width: 112
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7136dcf68b32801f0800000000000000
+      internalID: -1078572835698547945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleCriminal_AssetExport_V04 1_23
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 310
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 219049ed0eb425ff0800000000000000
+      internalID: -48893216768653038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleCriminal_AssetExport_V04 1_24
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 188
+        width: 277
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 827a2db30867fa8f0800000000000000
+      internalID: -527072338247506136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleCriminal_AssetExport_V04 1_25
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 310
+        width: 31
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7207ae4c6bc82c390800000000000000
+      internalID: -7799516888036642777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleCriminal_AssetExport_V04 1_26
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 144
+        width: 157
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f24b1d0e55110e40800000000000000
+      internalID: 5620797303626089203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleCriminal_AssetExport_V04 1_27
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 308
+        width: 110
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a590049670a07c9c0800000000000000
+      internalID: -3907143124773762726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleCriminal_AssetExport_V04 1_28
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 311
+        width: 122
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 271225ce03f0a96b0800000000000000
+      internalID: -5288898109595573902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleCriminal_AssetExport_V04 1_29
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 304
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81c3d4772867086f0800000000000000
+      internalID: -684416840640938984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleCriminal_AssetExport_V04 1_30
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 304
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 913aa5886204de2f0800000000000000
+      internalID: -942026212809989351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleCriminal_AssetExport_V04 1_31
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 188
+        width: 98
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bb21e9ea00c72090800000000000000
+      internalID: -8059261855050159180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleCriminal_AssetExport_V04 1_32
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 181
+        width: 100
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d0370629f7486dc0800000000000000
+      internalID: -3645584762945982256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleCriminal_AssetExport_V04 1_33
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 181
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28f424891691bcfc0800000000000000
+      internalID: -3473654780629201022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleCriminal_AssetExport_V04 1_34
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 181
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf4f51cb82e737310800000000000000
+      internalID: 1401602622461703419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleCriminal_AssetExport_V04 1_35
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 146
+        width: 37
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35f2d0e352a9b9700800000000000000
+      internalID: 548201264401166163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleCriminal_AssetExport_V04 1_36
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 15
+        width: 113
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7faaaecf2eadf0ef0800000000000000
+      internalID: -139652394984494345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleCriminal_AssetExport_V04 1_37
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 28
+        width: 148
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d928a7bf7f3302cf0800000000000000
+      internalID: -279166036727922019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleCriminal_AssetExport_V04 1_38
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 28
+        width: 148
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d85fa1b1b64945a30800000000000000
+      internalID: 4203147539980678541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleCriminal_AssetExport_V04 1_39
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 73
+        width: 118
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9a49b4128c144a90800000000000000
+      internalID: -7330702948433311077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleCriminal_AssetExport_V04 1_40
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 22
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d51295bc5aa6c8ac0800000000000000
+      internalID: -3851586320994852515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleCriminal_AssetExport_V04 1_41
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 22
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37a7b9332ffad2670800000000000000
+      internalID: 8515655925210249843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleCriminal_AssetExport_V04 1_42
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 22
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17d27a0f0de2e1310800000000000000
+      internalID: 1377590010947513713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleCriminal_AssetExport_V04 1_43
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 22
+        width: 96
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41c8cc91e70040570800000000000000
+      internalID: 8431864943943126036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 0ee1df4e9677d044caf9e4035d04d47a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

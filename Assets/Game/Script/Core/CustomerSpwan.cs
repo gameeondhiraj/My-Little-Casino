@@ -11,6 +11,8 @@ public class CustomerSpwan : MonoBehaviour
 
     public int SpwanCount = 1;
     public float delayBetweenSpwan = 0.2f;
+    public float chipSpwanTime = 1;
+    public bool isTable;
 
 
     void Start()
@@ -21,7 +23,11 @@ public class CustomerSpwan : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(!isTable)
         SpwanCustomer();
+
+        if (isTable)
+            SpwanCustomerForTable();
     }
     float x = 0.2f;
     public void SpwanCustomer()
@@ -37,6 +43,26 @@ public class CustomerSpwan : MonoBehaviour
             c.GetComponent<controlCustomer>().section = section;
             c.GetComponent<controlCustomer>().DestinationToExit = spwanPosition;
             c.GetComponent<controlCustomer>().spwanCount = SpwanCount;
+            c.GetComponent<controlCustomer>().fWaitTime = chipSpwanTime;
+            AvailableSeats[AvailableSeats.Count - 1].GetComponent<controlSeat>().isOccupied = true;
+            x = delayBetweenSpwan;
+        }
+    }
+
+    public void SpwanCustomerForTable()
+    {
+        if (AvailableSeats.Count > 0 && x > 0)
+            x -= Time.deltaTime;
+
+        if (AvailableSeats.Count > 0 && x <= 0)
+        {
+            GameObject c = Instantiate(Customer, spwanPosition);
+            c.transform.position = spwanPosition.position;
+            c.GetComponent<moveCustomer>().DestinationToSeat = AvailableSeats[AvailableSeats.Count - 1].transform;
+            c.GetComponent<controlCustomer>().section = section;
+            c.GetComponent<controlCustomer>().DestinationToExit = spwanPosition;
+            c.GetComponent<controlCustomer>().spwanCount = SpwanCount;
+            c.GetComponent<controlCustomer>().isCustomerForTable = true;
             AvailableSeats[AvailableSeats.Count - 1].GetComponent<controlSeat>().isOccupied = true;
             x = delayBetweenSpwan;
         }

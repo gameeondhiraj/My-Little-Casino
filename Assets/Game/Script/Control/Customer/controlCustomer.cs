@@ -22,6 +22,7 @@ public class controlCustomer : MonoBehaviour
 
     private bool bettingComplete;
 
+    public bool isCustomerForTable;
     void Start()
     {
         moveCustomer = GetComponent<moveCustomer>();        
@@ -32,12 +33,14 @@ public class controlCustomer : MonoBehaviour
     void Update()
     {
        gWaitTImer.transform.forward = -Camera.main.transform.forward;
-        spwanCash();
-
-       waitTimerUpdate();
+        if (!isCustomerForTable)
+        {
+            spwanChip();
+            waitTimerUpdate();
+        }        
     }
     //float x = 0.5f;
-    void spwanCash()
+    void spwanChip()
     {
         if (!bettingComplete && timerNum <= 0)
         {
@@ -52,19 +55,6 @@ public class controlCustomer : MonoBehaviour
                 }
             }
         }
-
-        /*if (moveCustomer.startTrading && x > 0)
-            x -= Time.deltaTime;
-        if (moveCustomer.startTrading && x <= 0)
-        {
-            for(int i=0;i<= spwanCount; i++)
-            {
-                GameObject c = Instantiate(chips, transform.position + new Vector3(0, 2, 0), Quaternion.identity);
-                c.GetComponent<controlChipsObjects>().section = section;
-                if(i>= spwanCount)
-                    x = delayTime;
-            }                        
-        }*/
     }
     void waitTimerUpdate()
     {
@@ -75,15 +65,15 @@ public class controlCustomer : MonoBehaviour
                 gWaitTImer.SetActive(true);
                 timerNum -= Time.deltaTime;
                 iWaitTimer.fillAmount = timerNum / fWaitTime;
-            });
-            
+            });            
         }
         if (bettingComplete && !moveCustomer.DestinationToExit)
         {            
             LeanTween.delayedCall(0.5f, () =>
             {
-                gWaitTImer.SetActive(false);
-                
+                if(gWaitTImer.activeSelf)
+                    gWaitTImer.SetActive(false);                
+
                 moveCustomer.DestinationToExit = DestinationToExit;                
             });
             
