@@ -50,7 +50,7 @@ public class controlSeatUnlock : MonoBehaviour
     }
     void moneyManagement()
     {
-        cashCounter.text = "$" + unlockingAmount.ToString("N0");
+        cashCounter.text = unlockingAmount.ToString("N0");
         if(controlSeat.isLocked && unlockingAmount <= 0)
         {
             controlSeat.isLocked = false;

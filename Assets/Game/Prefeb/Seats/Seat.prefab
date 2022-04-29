@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1196765885399291709}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.345, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4871405646602321185}
@@ -185,6 +185,81 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 300
+--- !u!1 &3048944037544789178
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7800250427719107749}
+  - component: {fileID: 1549421514796020342}
+  - component: {fileID: 8691074230156393005}
+  m_Layer: 0
+  m_Name: Cash Logo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &7800250427719107749
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3048944037544789178}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4518230050439012321}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -0.684, y: 0}
+  m_SizeDelta: {x: -1.9513, y: -1.2369}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1549421514796020342
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3048944037544789178}
+  m_CullTransparentMesh: 1
+--- !u!114 &8691074230156393005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3048944037544789178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -2684650006449867381, guid: 93e5b49d6a4819d44a921700e7845d0a, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 300
 --- !u!1 &4871405645849329897
 GameObject:
   m_ObjectHideFlags: 0
@@ -251,7 +326,7 @@ MonoBehaviour:
   unlockPartical: {fileID: 5773661403882390274, guid: b5c085565fbc10c4fb21c21ecca6d93e, type: 3}
   cashCounter: {fileID: 3578881966378085990}
   unlockingAmount: 90
-  reduceAmountSpeed: 20
+  reduceAmountSpeed: 100
   UnlockedObject: {fileID: 1196765885399291709}
   isPlayerNear: 0
 --- !u!54 &7126957285871719305
@@ -429,6 +504,7 @@ RectTransform:
   m_Children:
   - {fileID: 4837435217210204782}
   - {fileID: 3260542520981037780}
+  - {fileID: 7800250427719107749}
   m_Father: {fileID: 7758957298354968388}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
@@ -659,8 +735,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0.5238, y: 0}
+  m_SizeDelta: {x: -1.0475, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5384096355246813279
 CanvasRenderer:
@@ -690,10 +766,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: $100
+  m_text: 100
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: a939bf7d6f79ce74d88a77bed1161597, type: 2}
-  m_sharedMaterial: {fileID: -7116206212334667605, guid: a939bf7d6f79ce74d88a77bed1161597, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9da6f26ae99035f479c3b1e4e6ef68ab, type: 2}
+  m_sharedMaterial: {fileID: 5370698724567011154, guid: 9da6f26ae99035f479c3b1e4e6ef68ab, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -717,8 +793,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.75
-  m_fontSizeBase: 0.75
+  m_fontSize: 0.65
+  m_fontSizeBase: 0.65
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0

@@ -1,0 +1,1440 @@
+fileFormatVersion: 2
+guid: 93e5b49d6a4819d44a921700e7845d0a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7932278231537702925
+    second: MyLittleCasino_UI_SpritesheetV01_0
+  - first:
+      213: -406902160125227035
+    second: MyLittleCasino_UI_SpritesheetV01_1
+  - first:
+      213: 4339423492614237089
+    second: MyLittleCasino_UI_SpritesheetV01_2
+  - first:
+      213: 4542849304263807130
+    second: MyLittleCasino_UI_SpritesheetV01_3
+  - first:
+      213: -8595231216945770692
+    second: MyLittleCasino_UI_SpritesheetV01_4
+  - first:
+      213: -509648227052372896
+    second: MyLittleCasino_UI_SpritesheetV01_5
+  - first:
+      213: -3199564475411313422
+    second: MyLittleCasino_UI_SpritesheetV01_6
+  - first:
+      213: -1936063032678621701
+    second: MyLittleCasino_UI_SpritesheetV01_7
+  - first:
+      213: -4578391301470062278
+    second: MyLittleCasino_UI_SpritesheetV01_8
+  - first:
+      213: -630625402201846447
+    second: MyLittleCasino_UI_SpritesheetV01_9
+  - first:
+      213: 8711801263797549581
+    second: MyLittleCasino_UI_SpritesheetV01_10
+  - first:
+      213: 2190315788026435984
+    second: MyLittleCasino_UI_SpritesheetV01_11
+  - first:
+      213: 5395929170984085856
+    second: MyLittleCasino_UI_SpritesheetV01_12
+  - first:
+      213: 7271831465588870471
+    second: MyLittleCasino_UI_SpritesheetV01_13
+  - first:
+      213: 203119416367569952
+    second: MyLittleCasino_UI_SpritesheetV01_14
+  - first:
+      213: 7051091893680416405
+    second: MyLittleCasino_UI_SpritesheetV01_15
+  - first:
+      213: 9144122780901676490
+    second: MyLittleCasino_UI_SpritesheetV01_16
+  - first:
+      213: -4082352092476250018
+    second: MyLittleCasino_UI_SpritesheetV01_17
+  - first:
+      213: -4120813046920403941
+    second: MyLittleCasino_UI_SpritesheetV01_18
+  - first:
+      213: -7673776951405010224
+    second: MyLittleCasino_UI_SpritesheetV01_19
+  - first:
+      213: 8674822458241701602
+    second: MyLittleCasino_UI_SpritesheetV01_20
+  - first:
+      213: -1903723640796617610
+    second: MyLittleCasino_UI_SpritesheetV01_21
+  - first:
+      213: -5804326130882839278
+    second: MyLittleCasino_UI_SpritesheetV01_22
+  - first:
+      213: -2088039922427807639
+    second: MyLittleCasino_UI_SpritesheetV01_23
+  - first:
+      213: 1621657568610064103
+    second: MyLittleCasino_UI_SpritesheetV01_24
+  - first:
+      213: -883441160971849560
+    second: MyLittleCasino_UI_SpritesheetV01_25
+  - first:
+      213: 2900832643068238826
+    second: MyLittleCasino_UI_SpritesheetV01_26
+  - first:
+      213: -3889113210843635669
+    second: MyLittleCasino_UI_SpritesheetV01_27
+  - first:
+      213: 722324588632602432
+    second: MyLittleCasino_UI_SpritesheetV01_28
+  - first:
+      213: 5548338443434021173
+    second: MyLittleCasino_UI_SpritesheetV01_29
+  - first:
+      213: 4878601942654049828
+    second: MyLittleCasino_UI_SpritesheetV01_30
+  - first:
+      213: 1059892803833163034
+    second: MyLittleCasino_UI_SpritesheetV01_31
+  - first:
+      213: 5652418234043717804
+    second: MyLittleCasino_UI_SpritesheetV01_32
+  - first:
+      213: 2747696524048109064
+    second: MyLittleCasino_UI_SpritesheetV01_33
+  - first:
+      213: -6447989353482171006
+    second: MyLittleCasino_UI_SpritesheetV01_34
+  - first:
+      213: -2684650006449867381
+    second: MyLittleCasino_UI_SpritesheetV01_35
+  - first:
+      213: 508906132767688343
+    second: MyLittleCasino_UI_SpritesheetV01_36
+  - first:
+      213: 5247053161216863211
+    second: MyLittleCasino_UI_SpritesheetV01_37
+  - first:
+      213: -2070217714587925989
+    second: MyLittleCasino_UI_SpritesheetV01_38
+  - first:
+      213: 2610670471191225938
+    second: MyLittleCasino_UI_SpritesheetV01_39
+  - first:
+      213: -8602957503458122541
+    second: MyLittleCasino_UI_SpritesheetV01_40
+  - first:
+      213: 3407871501809503595
+    second: MyLittleCasino_UI_SpritesheetV01_41
+  - first:
+      213: -7440222847055899487
+    second: MyLittleCasino_UI_SpritesheetV01_42
+  - first:
+      213: -3770045415832919562
+    second: MyLittleCasino_UI_SpritesheetV01_43
+  - first:
+      213: 1114519258271110419
+    second: MyLittleCasino_UI_SpritesheetV01_44
+  - first:
+      213: 1029391093706173549
+    second: MyLittleCasino_UI_SpritesheetV01_45
+  - first:
+      213: 1759221032042400865
+    second: MyLittleCasino_UI_SpritesheetV01_46
+  - first:
+      213: 5903640893799183668
+    second: MyLittleCasino_UI_SpritesheetV01_47
+  - first:
+      213: -420842490973927842
+    second: MyLittleCasino_UI_SpritesheetV01_48
+  - first:
+      213: -8406327672299594230
+    second: MyLittleCasino_UI_SpritesheetV01_49
+  - first:
+      213: -2075911606455228136
+    second: MyLittleCasino_UI_SpritesheetV01_50
+  - first:
+      213: 2428429287509306379
+    second: MyLittleCasino_UI_SpritesheetV01_51
+  - first:
+      213: 5398973277048887003
+    second: MyLittleCasino_UI_SpritesheetV01_52
+  - first:
+      213: 6941498468933143381
+    second: MyLittleCasino_UI_SpritesheetV01_53
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 2
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MyLittleCasino_UI_SpritesheetV01_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 879
+        width: 119
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d085e5a460d151e60800000000000000
+      internalID: 7932278231537702925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MyLittleCasino_UI_SpritesheetV01_1
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 887
+        width: 285
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 50, y: 57, z: 50, w: 45}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ef856724a46a5af0800000000000000
+      internalID: -406902160125227035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MyLittleCasino_UI_SpritesheetV01_2
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 900
+        width: 219
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 23, y: 0, z: 26, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aba14fdcaab83c30800000000000000
+      internalID: 4339423492614237089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MyLittleCasino_UI_SpritesheetV01_3
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 887
+        width: 100
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9056c88f517b0f30800000000000000
+      internalID: 4542849304263807130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MyLittleCasino_UI_SpritesheetV01_4
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 893
+        width: 95
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3f49976fba97b880800000000000000
+      internalID: -8595231216945770692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MyLittleCasino_UI_SpritesheetV01_5
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 762
+        width: 109
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06cb22243ad5de8f0800000000000000
+      internalID: -509648227052372896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MyLittleCasino_UI_SpritesheetV01_6
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 781
+        width: 114
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fc4627cf0dd893d0800000000000000
+      internalID: -3199564475411313422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MyLittleCasino_UI_SpritesheetV01_7
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 770
+        width: 107
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfddc62fde8b125e0800000000000000
+      internalID: -1936063032678621701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MyLittleCasino_UI_SpritesheetV01_8
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 793
+        width: 104
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3973216e594670c0800000000000000
+      internalID: -4578391301470062278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MyLittleCasino_UI_SpritesheetV01_9
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 754
+        width: 122
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15dcb63b9819f37f0800000000000000
+      internalID: -630625402201846447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MyLittleCasino_UI_SpritesheetV01_10
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 771
+        width: 103
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0ab372a71986e870800000000000000
+      internalID: 8711801263797549581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MyLittleCasino_UI_SpritesheetV01_11
+      rect:
+        serializedVersion: 2
+        x: 889
+        y: 768
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 099de3bba90956e10800000000000000
+      internalID: 2190315788026435984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MyLittleCasino_UI_SpritesheetV01_12
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 664
+        width: 380
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 36, y: 0, z: 36, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 069acadfdf032ea40800000000000000
+      internalID: 5395929170984085856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MyLittleCasino_UI_SpritesheetV01_13
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 631
+        width: 104
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74dceeca03cbae460800000000000000
+      internalID: 7271831465588870471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MyLittleCasino_UI_SpritesheetV01_14
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 660
+        width: 74
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02cd2937800a1d200800000000000000
+      internalID: 203119416367569952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MyLittleCasino_UI_SpritesheetV01_15
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 643
+        width: 90
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 596257118b28ad160800000000000000
+      internalID: 7051091893680416405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MyLittleCasino_UI_SpritesheetV01_16
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 651
+        width: 150
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac5933ab83376ee70800000000000000
+      internalID: 9144122780901676490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MyLittleCasino_UI_SpritesheetV01_17
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 716
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5861efa6629857c0800000000000000
+      internalID: -4082352092476250018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MyLittleCasino_UI_SpritesheetV01_18
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 723
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b14a388ed5eefc6c0800000000000000
+      internalID: -4120813046920403941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MyLittleCasino_UI_SpritesheetV01_19
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 716
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d2ace52584418590800000000000000
+      internalID: -7673776951405010224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MyLittleCasino_UI_SpritesheetV01_20
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 673
+        width: 27
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e6d3198019236870800000000000000
+      internalID: 8674822458241701602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MyLittleCasino_UI_SpritesheetV01_21
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 673
+        width: 52
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 674edcf5f6d9495e0800000000000000
+      internalID: -1903723640796617610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MyLittleCasino_UI_SpritesheetV01_22
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 673
+        width: 28
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21df538f224e27fa0800000000000000
+      internalID: -5804326130882839278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MyLittleCasino_UI_SpritesheetV01_23
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 617
+        width: 346
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9683bd2e0cac503e0800000000000000
+      internalID: -2088039922427807639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MyLittleCasino_UI_SpritesheetV01_24
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 568
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e6935c77f8418610800000000000000
+      internalID: 1621657568610064103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MyLittleCasino_UI_SpritesheetV01_25
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 568
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a0705cd1f26db3f0800000000000000
+      internalID: -883441160971849560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MyLittleCasino_UI_SpritesheetV01_26
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 568
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeb90fa6be3d14820800000000000000
+      internalID: 2900832643068238826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MyLittleCasino_UI_SpritesheetV01_27
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 568
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b20e260e328170ac0800000000000000
+      internalID: -3889113210843635669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MyLittleCasino_UI_SpritesheetV01_28
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 519
+        width: 107
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 047f9f5e266360a00800000000000000
+      internalID: 722324588632602432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MyLittleCasino_UI_SpritesheetV01_29
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 560
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 531578efa68affc40800000000000000
+      internalID: 5548338443434021173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MyLittleCasino_UI_SpritesheetV01_30
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 574
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42edc607e9644b340800000000000000
+      internalID: 4878601942654049828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MyLittleCasino_UI_SpritesheetV01_31
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 536
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1de778b3ee75be00800000000000000
+      internalID: 1059892803833163034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MyLittleCasino_UI_SpritesheetV01_32
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 574
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca8dd12af6c617e40800000000000000
+      internalID: 5652418234043717804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MyLittleCasino_UI_SpritesheetV01_33
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 560
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80e86724e67c12620800000000000000
+      internalID: 2747696524048109064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MyLittleCasino_UI_SpritesheetV01_34
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 500
+        width: 134
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28dc13e88d32486a0800000000000000
+      internalID: -6447989353482171006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MyLittleCasino_UI_SpritesheetV01_35
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 511
+        width: 145
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b853e430b053ebad0800000000000000
+      internalID: -2684650006449867381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MyLittleCasino_UI_SpritesheetV01_36
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 492
+        width: 137
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 796c2a37e6fff0700800000000000000
+      internalID: 508906132767688343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MyLittleCasino_UI_SpritesheetV01_37
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 521
+        width: 48
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bebebefcc0741d840800000000000000
+      internalID: 5247053161216863211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MyLittleCasino_UI_SpritesheetV01_38
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 521
+        width: 48
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b12044205fb1543e0800000000000000
+      internalID: -2070217714587925989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MyLittleCasino_UI_SpritesheetV01_39
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 531
+        width: 42
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25664fc26f6fa3420800000000000000
+      internalID: 2610670471191225938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MyLittleCasino_UI_SpritesheetV01_40
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 521
+        width: 48
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d4e8942bb72c9880800000000000000
+      internalID: -8602957503458122541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MyLittleCasino_UI_SpritesheetV01_41
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 521
+        width: 47
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6d488143113b4f20800000000000000
+      internalID: 3407871501809503595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MyLittleCasino_UI_SpritesheetV01_42
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 533
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a4dc779db40fb890800000000000000
+      internalID: -7440222847055899487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MyLittleCasino_UI_SpritesheetV01_43
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 520
+        width: 25
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f1603a3bab1eabc0800000000000000
+      internalID: -3770045415832919562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MyLittleCasino_UI_SpritesheetV01_44
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 520
+        width: 25
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 315d4944c51977f00800000000000000
+      internalID: 1114519258271110419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MyLittleCasino_UI_SpritesheetV01_45
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 533
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6cae4beeb1294e00800000000000000
+      internalID: 1029391093706173549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MyLittleCasino_UI_SpritesheetV01_46
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 211
+        width: 282
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 82, y: 98, z: 74, w: 82}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16c884835320a6810800000000000000
+      internalID: 1759221032042400865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MyLittleCasino_UI_SpritesheetV01_47
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 365
+        width: 122
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 435be543d12fde150800000000000000
+      internalID: 5903640893799183668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MyLittleCasino_UI_SpritesheetV01_48
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 36
+        width: 236
+        height: 149
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 61, y: 55, z: 58, w: 47}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e56cb13fbfdd82af0800000000000000
+      internalID: -420842490973927842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MyLittleCasino_UI_SpritesheetV01_49
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 667
+        width: 123
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0edb0b4589b65b80800000000000000
+      internalID: -8406327672299594230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MyLittleCasino_UI_SpritesheetV01_50
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 512
+        width: 60
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81920208461e033e0800000000000000
+      internalID: -2075911606455228136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MyLittleCasino_UI_SpritesheetV01_51
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 515
+        width: 57
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0ca524129383b120800000000000000
+      internalID: 2428429287509306379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MyLittleCasino_UI_SpritesheetV01_52
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 510
+        width: 66
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd6535a27910dea40800000000000000
+      internalID: 5398973277048887003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MyLittleCasino_UI_SpritesheetV01_53
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 519
+        width: 60
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55b8da17418255060800000000000000
+      internalID: 6941498468933143381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 13d8b32a80010564f87f6945724f505e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

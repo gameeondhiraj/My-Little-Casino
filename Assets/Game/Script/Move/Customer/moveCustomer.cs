@@ -42,10 +42,8 @@ public class moveCustomer : MonoBehaviour
         {
             if(!callNewCustomer)
             {
-                LeanTween.delayedCall(1f, () =>
-                {                                     
-                    callNewCustomer = true;
-                });
+                if (!controlCustomer.isCustomerForTable) StartCoroutine(NewCustomerCall(1));
+                if (controlCustomer.isCustomerForTable) StartCoroutine(NewCustomerCall(6));
             }
             if(callNewCustomer && DestinationToSeat != null)
             {
@@ -58,8 +56,24 @@ public class moveCustomer : MonoBehaviour
             agent.SetDestination(DestinationToExit.position);
             if (Vector3.Distance(transform.position, DestinationToExit.position) <= 1f)
             {
-                Destroy(gameObject);
+                try
+                {
+                    if (controlCustomer.table.Customer.Contains(this.gameObject))
+                        controlCustomer.table.Customer.Remove(this.gameObject);
+                    Destroy(gameObject, 0.1f);
+                }
+                catch
+                {
+                    Destroy(gameObject);
+                }
+                
             }
         }
+    }
+
+    IEnumerator NewCustomerCall(float t)
+    {
+        yield return new WaitForSeconds(t);
+        callNewCustomer = true;
     }
 }

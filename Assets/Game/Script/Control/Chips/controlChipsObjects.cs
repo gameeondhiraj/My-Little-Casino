@@ -5,6 +5,7 @@ public class controlChipsObjects : MonoBehaviour
     public coreSection section;
     public Vector3 EndPosition;
     public float moveSpeed = 5;
+    public float force = 0.5f;
 
     public int chipCost;
    
@@ -12,7 +13,6 @@ public class controlChipsObjects : MonoBehaviour
     public bool isMove;
     public bool isDestroy;
     public bool isStacked;
-    float force = 2f;
     void Start()
     {
         if (!section.chips.Contains(this.gameObject))

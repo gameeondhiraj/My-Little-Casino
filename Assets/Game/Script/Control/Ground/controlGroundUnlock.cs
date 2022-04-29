@@ -43,7 +43,7 @@ public class controlGroundUnlock : MonoBehaviour
     }
     void moneyManagement()
     {
-        cashCounter.text = "$" + unlockingAmount.ToString();
+        cashCounter.text = unlockingAmount.ToString("N0");
         if (isLocked && unlockingAmount <= 0)
         {
             isLocked = false;

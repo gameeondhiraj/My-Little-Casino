@@ -43,12 +43,19 @@ public class GameManager : MonoBehaviour
     public GameObject LockedSection;
     public int RewardMoney;
 
+    [Header("Table")]
+    [Space(10)]
+    public bool BJ;
+    public bool RL;
+    public bool CP;
+
 
 
     void Start()
     {
         Application.targetFrameRate = 60;
         customerRequestedCount = MaxCustomerCount();
+        currentCash = maxCash;
     }
 
 

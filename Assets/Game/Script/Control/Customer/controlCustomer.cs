@@ -5,11 +5,12 @@ using UnityEngine.UI;
 
 public class controlCustomer : MonoBehaviour
 {
+    [HideInInspector] public controlTable table;
     private moveCustomer moveCustomer;
-
     public coreSection section;
     public GameObject chips;
     public Transform DestinationToExit;
+    public Transform ChipSpwanPosition;
     public int spwanCount= 5;
     public float delayTime = 1;
 
@@ -46,12 +47,15 @@ public class controlCustomer : MonoBehaviour
         {
             for(int i=0;i<= spwanCount; i++)
             {
-                GameObject c = Instantiate(chips, transform.position + new Vector3(0, 2, 0), Quaternion.identity);
+                GameObject c = Instantiate(chips, ChipSpwanPosition.position, Quaternion.identity);
                 c.GetComponent<controlChipsObjects>().section = section;
                 if (i >= spwanCount - 1)
                 {
-                    bettingComplete = true;
-                    FindObjectOfType<GameManager>().CustomerCount++;
+                    if (!bettingComplete)
+                    {
+                        FindObjectOfType<GameManager>().CustomerCount++;
+                        bettingComplete = true;
+                    }                    
                 }
             }
         }
