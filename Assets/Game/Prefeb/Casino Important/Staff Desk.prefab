@@ -646,6 +646,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53c1326c06cfbed468a42b8412ec00b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coreSection: {fileID: 0}
   StaffPosition:
   - {fileID: 1148625756}
   - {fileID: 752773069}
@@ -654,6 +655,7 @@ MonoBehaviour:
   HireUI: {fileID: 2952967401727191663}
   Staff: {fileID: 232393713474849805, guid: ad84b00bbfa96844681ab0244801fea1, type: 3}
   staffInventory: {fileID: 132106423}
+  VaultPosition: {fileID: 0}
   HireButton: {fileID: 9078759318102898037}
   Amount: {fileID: 7111560693983503202}
   HireCount: 0

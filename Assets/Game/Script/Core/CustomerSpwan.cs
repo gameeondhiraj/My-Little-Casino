@@ -8,6 +8,7 @@ public class CustomerSpwan : MonoBehaviour
     public GameObject Customer;
     public GameObject VIPCustomer;
     public Transform spwanPosition;
+    public Transform DestinationForExit;
     public coreSection section;
 
     public int SpwanCount = 1;
@@ -44,7 +45,7 @@ public class CustomerSpwan : MonoBehaviour
             c.transform.position = spwanPosition.position;
             c.GetComponent<moveCustomer>().DestinationToSeat = AvailableSeats[AvailableSeats.Count - 1].transform;
             c.GetComponent<controlCustomer>().section = section;
-            c.GetComponent<controlCustomer>().DestinationToExit = spwanPosition;
+            c.GetComponent<controlCustomer>().DestinationToExit = DestinationForExit;
             c.GetComponent<controlCustomer>().spwanCount = SpwanCount;
             c.GetComponent<controlCustomer>().fWaitTime = chipSpwanTime;
             AvailableSeats[AvailableSeats.Count - 1].GetComponent<controlSeat>().isOccupied = true;
@@ -60,7 +61,7 @@ public class CustomerSpwan : MonoBehaviour
             c.transform.position = spwanPosition.position;
             c.GetComponent<moveCustomer>().DestinationToSeat = AvailableSeats[AvailableSeats.Count - 1].transform;
             c.GetComponent<controlCustomer>().section = section;
-            c.GetComponent<controlCustomer>().DestinationToExit = spwanPosition;
+            c.GetComponent<controlCustomer>().DestinationToExit = DestinationForExit;
             c.GetComponent<controlCustomer>().spwanCount = VIPSpwanCount;
             c.GetComponent<controlCustomer>().fWaitTime = chipSpwanTime;
             AvailableSeats[AvailableSeats.Count - 1].GetComponent<controlSeat>().isOccupied = true;

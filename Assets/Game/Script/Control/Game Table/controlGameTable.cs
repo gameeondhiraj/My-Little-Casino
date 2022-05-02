@@ -89,6 +89,7 @@ public class controlGameTable : MonoBehaviour
             BJ.GetComponent<CustomerSpwan>().section = Section;
             Destroy(Instantiate(SpwanParticalEffect, BJ.transform.position + new Vector3(-1.5f, 0.5f, 0), Quaternion.identity), 3);
             GameTableUI.GetComponent<Animator>().Play("Game Table Exit");
+            GameManager.tableCount++;
             GameManager.BJ = true;
             Roul.interactable = true;
             GameManager.maxCash -= BCost;
@@ -105,6 +106,7 @@ public class controlGameTable : MonoBehaviour
             RL.GetComponent<CustomerSpwan>().section = Section;
             Destroy(Instantiate(SpwanParticalEffect, RL.transform.position + new Vector3(-1.5f, 0.5f,0), Quaternion.identity), 3);
             GameTableUI.GetComponent<Animator>().Play("Game Table Exit");
+            GameManager.tableCount++;
             GameManager.RL = true;
             Craps.interactable = true;
             GameManager.maxCash -= RCost;
@@ -121,6 +123,7 @@ public class controlGameTable : MonoBehaviour
             CP.GetComponent<CustomerSpwan>().section = Section;
             Destroy(Instantiate(SpwanParticalEffect, CP.transform.position + new Vector3(-1.5f, 0.5f, 0), Quaternion.identity), 3);
             GameTableUI.GetComponent<Animator>().Play("Game Table Exit");
+            GameManager.tableCount++;
             GameManager.CP = true;
             GameManager.maxCash -= CCost;
         }            

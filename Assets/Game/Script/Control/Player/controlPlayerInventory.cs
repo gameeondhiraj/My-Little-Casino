@@ -85,6 +85,7 @@ namespace Casino.Control
                 col.transform.GetComponent<controlChipsObjects>().isMove = true;
             }
             col.transform.GetComponent<controlChipsObjects>().isStacked = true;
+            col.transform.GetComponent<controlChipsObjects>().isPlayerCollected = true;
             col.transform.GetComponent<Rigidbody>().isKinematic = true;
             col.transform.GetComponent<Collider>().isTrigger = true;
             col.transform.rotation = Quaternion.Euler(0, 0, 0);
@@ -95,7 +96,7 @@ namespace Casino.Control
 
         }
 
-        float x = 0.1f;
+        float x = 0.03f;
         public void SellCartItem()
         {
             if (SellItemInVault && Cart.Count > 0)
@@ -110,7 +111,7 @@ namespace Casino.Control
                     //Cart[Cart.Count - 1].transform.GetComponent<controlChipsObjects>().moveSpeed += 35;
                     Cart[Cart.Count - 1].transform.GetComponent<controlChipsObjects>().isMove = true;
                     Cart.Remove(Cart[Cart.Count - 1]);
-                    x = 0.1f;
+                    x = 0.03f;
                 }
             }
         }

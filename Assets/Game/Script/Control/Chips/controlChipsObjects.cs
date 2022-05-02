@@ -1,4 +1,7 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class controlChipsObjects : MonoBehaviour
 {
@@ -13,11 +16,18 @@ public class controlChipsObjects : MonoBehaviour
     public bool isMove;
     public bool isDestroy;
     public bool isStacked;
+    public bool isOccupied;
+
+    public bool isPlayerCollected;
+    public controlMoneyUI controlMoney;
     void Start()
     {
+
+
         if (!section.chips.Contains(this.gameObject))
             section.chips.Add(this.gameObject);
 
+        controlMoney = FindObjectOfType<controlMoneyUI>();
         transform.rotation = Quaternion.Euler(Random.Range(0, 360), Random.Range(0, 360), Random.Range(0, 360));
 
         GetComponent<Rigidbody>().AddForce(transform.up * force, ForceMode.Impulse);
@@ -36,6 +46,8 @@ public class controlChipsObjects : MonoBehaviour
             section.chips.Remove(this.gameObject);
             isStacked = false;
         }
+
+        if (isOccupied) section.chips.Remove(this.gameObject);
     }
     public void moveObject()
     {
@@ -57,6 +69,21 @@ public class controlChipsObjects : MonoBehaviour
             isMove = false;
         }
     }
+
+    void getUI()
+    {
+        GameObject UI = controlMoney.CashUI[controlMoney.CashUI.Count - 1].gameObject;
+        controlMoney.CashUI.Remove(controlMoney.CashUI[controlMoney.CashUI.Count - 1]);
+        UI.SetActive(true);
+        UI.transform.position = Camera.main.WorldToScreenPoint(transform.position);
+        RectTransform RUI = UI.GetComponent<RectTransform>();
+        LeanTween.move(RUI, new Vector3(0f, 0f, 0f), 0.5f).setOnComplete(() => {
+            RUI.gameObject.SetActive(false);
+            controlMoney.CashUI.Add(RUI);
+            FindObjectOfType<GameManager>().maxCash += chipCost;
+        });        
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Ground"))
@@ -69,9 +96,14 @@ public class controlChipsObjects : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Vault"))
-        {
-            FindObjectOfType<GameManager>().maxCash += chipCost;
+        {            
             Destroy(this.gameObject);
+            if(isPlayerCollected)
+                getUI();
+            else
+            {
+                FindObjectOfType<GameManager>().maxCash += chipCost;
+            }
         }
     }
 }

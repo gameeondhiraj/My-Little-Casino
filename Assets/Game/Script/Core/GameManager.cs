@@ -28,6 +28,8 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI tSectionCount;
     public int CustomerCount;
     public int customerRequestedCount;
+    public int tableCount;
+    public TextMeshProUGUI tableCountText;
     
 
     [Header("Slider")]
@@ -70,6 +72,8 @@ public class GameManager : MonoBehaviour
         LevelUIManager();
         customerSlider();
         upgrade();
+
+        tableCountText.text = tableCount.ToString("N0") + "/ 4";
     }
 
     void cashCounter()

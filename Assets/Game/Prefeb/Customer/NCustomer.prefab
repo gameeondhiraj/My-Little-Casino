@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4272540445430024003}
   - component: {fileID: 4374867118763985186}
   - component: {fileID: -100558332453084270}
+  - component: {fileID: 1424424851124993906}
   m_Layer: 9
   m_Name: NCustomer
   m_TagString: Untagged
@@ -61,7 +62,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1515782369480412809}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.5
+  m_Radius: 0.1
   m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
@@ -97,6 +98,19 @@ MonoBehaviour:
   iWaitTimer: {fileID: 4948722122080810135}
   fWaitTime: 7
   isCustomerForTable: 0
+--- !u!65 &1424424851124993906
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1515782369480412809}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!1 &2018009116106365082
 GameObject:
   m_ObjectHideFlags: 0
@@ -1615,7 +1629,6 @@ GameObject:
   - component: {fileID: 547467950909177281}
   - component: {fileID: 8794399175250991852}
   - component: {fileID: 5004567924060833112}
-  - component: {fileID: 5908811263690339743}
   m_Layer: 9
   m_Name: Capsule
   m_TagString: Untagged
@@ -1686,17 +1699,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &5908811263690339743
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7700701045376188625}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}

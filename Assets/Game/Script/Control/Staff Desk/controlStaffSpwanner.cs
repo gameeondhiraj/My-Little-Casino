@@ -7,10 +7,12 @@ using TMPro;
 
 public class controlStaffSpwanner : MonoBehaviour
 {
+    public coreSection coreSection;
     public List<Transform> StaffPosition = new List<Transform>();
     public GameObject HireUI;
     public GameObject Staff;
     public Transform staffInventory;
+    public Transform VaultPosition;
     public Button HireButton;
 
     public TextMeshProUGUI Amount;
@@ -56,12 +58,15 @@ public class controlStaffSpwanner : MonoBehaviour
         if(HireCount < maxHireCount && GameManager.maxCash>= GameManager.StaffHIreAmount)
         {
             GameObject staff = Instantiate(Staff, staffInventory.position, Quaternion.identity, staffInventory);
-            staff.GetComponent<controlStaff>().initialPosition = StaffPosition[Random.Range(0, StaffPosition.Count - 1)];
-            if (StaffPosition.Contains(staff.GetComponent<controlStaff>().initialPosition))
-                StaffPosition.Remove(staff.GetComponent<controlStaff>().initialPosition);
+            staff.GetComponent<moveStaff>().TargetToInitPosition = StaffPosition[Random.Range(0, StaffPosition.Count - 1)];
+            if (StaffPosition.Contains(staff.GetComponent<moveStaff>().TargetToInitPosition))
+                StaffPosition.Remove(staff.GetComponent<moveStaff>().TargetToInitPosition);
+            staff.GetComponent<moveStaff>().TargetToVault = VaultPosition;
             GameManager.maxCash -= GameManager.StaffHIreAmount;
+            staff.GetComponent<controlStaff>().section = coreSection;
             HireCount++;
             GameManager.StaffHIreAmount += 150;
+            onClickCloseButton();
         }
     }
 
@@ -82,7 +87,9 @@ public class controlStaffSpwanner : MonoBehaviour
         try
         {
             if (other.gameObject.CompareTag("Player") && other.gameObject.GetComponent<movePlayer>().direction.magnitude < 0.1f)
-                isPlayerNear = true;
+            {
+                if (GameManager.Level >= 4) isPlayerNear = true;
+            }
         }
         catch
         {
