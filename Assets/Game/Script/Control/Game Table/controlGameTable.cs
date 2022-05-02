@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class controlGameTable : MonoBehaviour
@@ -22,9 +23,13 @@ public class controlGameTable : MonoBehaviour
     public GameObject CRAPS;
 
     public string whichTableIsIt;
-
+    private bool isClickedOnCloseButton;
     private GameManager GameManager;
 
+    [Header("Buttons")]
+    public Button Black;
+    public Button Roul;
+    public Button Craps;
 
     private float BCost = 500;
     public TextMeshProUGUI BJText;
@@ -40,17 +45,28 @@ public class controlGameTable : MonoBehaviour
         {
             //Spwan Table from GameManager
         }
+        if (!GameManager.BJ) Roul.interactable = false;
+        if (!GameManager.RL) Craps.interactable = false;
     }
 
     
     void Update()
     {
         CheckForTabel();
+        buttonCheck();
         BJText.text = BCost.ToString("N0");
         RLText.text = RCost.ToString("N0");
         CPText.text = CCost.ToString("N0");
+
     }
 
+    void buttonCheck()
+    {
+        if (GameManager.maxCash < BCost) Black.interactable = false; else { Black.interactable = true; }
+        if (GameManager.maxCash < RCost) Roul.interactable = false; else if(GameManager.BJ && GameManager.maxCash >= RCost) { Roul.interactable = true; }
+        if (GameManager.maxCash < CCost) Craps.interactable = false; else if(GameManager.RL && GameManager.maxCash >= CCost) { Craps.interactable = true; }
+
+    }
     void CheckForTabel()
     {
         if (!Table)
@@ -74,6 +90,7 @@ public class controlGameTable : MonoBehaviour
             Destroy(Instantiate(SpwanParticalEffect, BJ.transform.position + new Vector3(-1.5f, 0.5f, 0), Quaternion.identity), 3);
             GameTableUI.GetComponent<Animator>().Play("Game Table Exit");
             GameManager.BJ = true;
+            Roul.interactable = true;
             GameManager.maxCash -= BCost;
         }
         
@@ -89,6 +106,7 @@ public class controlGameTable : MonoBehaviour
             Destroy(Instantiate(SpwanParticalEffect, RL.transform.position + new Vector3(-1.5f, 0.5f,0), Quaternion.identity), 3);
             GameTableUI.GetComponent<Animator>().Play("Game Table Exit");
             GameManager.RL = true;
+            Craps.interactable = true;
             GameManager.maxCash -= RCost;
         }
             
@@ -110,13 +128,14 @@ public class controlGameTable : MonoBehaviour
 
     public void closeGameTableUI()
     {
+        isClickedOnCloseButton = true;
         if (GameTableUI.activeSelf)
             GameTableUI.GetComponent<Animator>().Play("Game Table Exit");
     }
 
     private void OnTriggerStay(Collider other)
     {
-        if(other.gameObject.CompareTag("Player") && other.GetComponentInParent<movePlayer>().direction.magnitude < 0.1f)
+        if(!isClickedOnCloseButton && other.gameObject.CompareTag("Player") && other.GetComponentInParent<movePlayer>().direction.magnitude < 0.1f)
         {
             isPlayerHere = true;
             if (!Table) GameTableUI.SetActive(true);
@@ -129,5 +148,8 @@ public class controlGameTable : MonoBehaviour
 
         if (GameTableUI.activeSelf)
             GameTableUI.GetComponent<Animator>().Play("Game Table Exit");
+
+        if (isClickedOnCloseButton)
+            isClickedOnCloseButton = false;
     }
 }

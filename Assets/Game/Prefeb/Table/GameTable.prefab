@@ -1795,7 +1795,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4997949613041754760
 Transform:
   m_ObjectHideFlags: 0
@@ -1835,6 +1835,9 @@ MonoBehaviour:
   ROULETTE: {fileID: 1632739846493096429, guid: 71673252b1ff65a49a98cbec20d68309, type: 3}
   CRAPS: {fileID: 4968826711100647409, guid: 241d6d25be353ad47a1f6e8f4a26d30e, type: 3}
   whichTableIsIt: 
+  Black: {fileID: 4997949611665859837}
+  Roul: {fileID: 2759313309316287203}
+  Craps: {fileID: 6592108497056399354}
   BJText: {fileID: 4997949613657100853}
   RLText: {fileID: 881551536819335170}
   CPText: {fileID: 1605803123752583820}
@@ -1884,7 +1887,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4997949613074598300
 RectTransform:
   m_ObjectHideFlags: 0

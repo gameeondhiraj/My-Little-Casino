@@ -49,6 +49,10 @@ public class GameManager : MonoBehaviour
     public bool RL;
     public bool CP;
 
+    [Header("Staff")]
+    [Space(10)]
+    public int StaffHIreAmount = 450;
+
 
 
     void Start()
