@@ -5,7 +5,7 @@ using UnityEngine;
 public class CustomerSpwan : MonoBehaviour
 {
     public List<GameObject> AvailableSeats = new List<GameObject>();
-    public GameObject Customer;
+    public GameObject[] Customer;
     public GameObject VIPCustomer;
     public Transform spwanPosition;
     public Transform DestinationForExit;
@@ -41,7 +41,7 @@ public class CustomerSpwan : MonoBehaviour
 
         if (AvailableSeats.Count > 0 && x <= 0)
         {
-            GameObject c = Instantiate(Customer, spwanPosition);
+            GameObject c = Instantiate(Customer[Random.Range(0, Customer.Length)], spwanPosition);
             c.transform.position = spwanPosition.position;
             c.GetComponent<moveCustomer>().DestinationToSeat = AvailableSeats[AvailableSeats.Count - 1].transform;
             c.GetComponent<controlCustomer>().section = section;
@@ -57,7 +57,7 @@ public class CustomerSpwan : MonoBehaviour
             y -= Time.deltaTime;
         if (AvailableSeats.Count > 0 && y <= 0)
         {
-            GameObject c = Instantiate(Customer, spwanPosition);
+            GameObject c = Instantiate(VIPCustomer, spwanPosition);
             c.transform.position = spwanPosition.position;
             c.GetComponent<moveCustomer>().DestinationToSeat = AvailableSeats[AvailableSeats.Count - 1].transform;
             c.GetComponent<controlCustomer>().section = section;
@@ -76,7 +76,7 @@ public class CustomerSpwan : MonoBehaviour
 
         if (AvailableSeats.Count > 0 && x <= 0)
         {
-            GameObject c = Instantiate(Customer, spwanPosition);
+            GameObject c = Instantiate(Customer[Random.Range(0, Customer.Length)], spwanPosition);
             c.transform.position = spwanPosition.position;
             c.GetComponent<moveCustomer>().DestinationToSeat = AvailableSeats[AvailableSeats.Count - 1].transform;
             c.GetComponent<controlCustomer>().section = section;

@@ -1185,10 +1185,6 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4871405645849329899, guid: dc1b464c81d607b498a6199cf9808188, type: 3}
-      propertyPath: rotationFace
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: 4871405645849329899, guid: dc1b464c81d607b498a6199cf9808188, type: 3}
       propertyPath: CustomerSpwan
       value: 
       objectReference: {fileID: 343194348}
@@ -2075,7 +2071,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AvailableSeats: []
-  Customer: []
+  Customer: {fileID: 1515782369480412809, guid: af59ff8f5da8e3641a671a31025b5eae, type: 3}
   VIPCustomer: {fileID: 0}
   spwanPosition: {fileID: 1499604513}
   DestinationForExit: {fileID: 1889638302}
@@ -3597,7 +3593,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AvailableSeats: []
-  Customer: []
+  Customer: {fileID: 1515782369480412809, guid: af59ff8f5da8e3641a671a31025b5eae, type: 3}
   VIPCustomer: {fileID: 1515782369480412809, guid: 43ad3ecdb3ab95244ba0992d3973327d, type: 3}
   spwanPosition: {fileID: 2087715019}
   DestinationForExit: {fileID: 517349973}
@@ -3900,9 +3896,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AvailableSeats: []
-  Customer:
-  - {fileID: 1515782369480412809, guid: 917e4b25557e7e04793d1f5a4c74de07, type: 3}
-  - {fileID: 1515782369480412809, guid: af59ff8f5da8e3641a671a31025b5eae, type: 3}
+  Customer: {fileID: 1515782369480412809, guid: af59ff8f5da8e3641a671a31025b5eae, type: 3}
   VIPCustomer: {fileID: 1515782369480412809, guid: 43ad3ecdb3ab95244ba0992d3973327d, type: 3}
   spwanPosition: {fileID: 228742803}
   DestinationForExit: {fileID: 1814702773}
@@ -4075,10 +4069,6 @@ PrefabInstance:
     - target: {fileID: 4871405645849329899, guid: dc1b464c81d607b498a6199cf9808188, type: 3}
       propertyPath: isLocked
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4871405645849329899, guid: dc1b464c81d607b498a6199cf9808188, type: 3}
-      propertyPath: rotationFace
-      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 4871405645849329899, guid: dc1b464c81d607b498a6199cf9808188, type: 3}
       propertyPath: CustomerSpwan
@@ -6850,10 +6840,6 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4871405645849329899, guid: dc1b464c81d607b498a6199cf9808188, type: 3}
-      propertyPath: rotationFace
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: 4871405645849329899, guid: dc1b464c81d607b498a6199cf9808188, type: 3}
       propertyPath: CustomerSpwan
       value: 
       objectReference: {fileID: 343194348}
@@ -8633,10 +8619,6 @@ PrefabInstance:
     - target: {fileID: 4871405645849329899, guid: dc1b464c81d607b498a6199cf9808188, type: 3}
       propertyPath: isLocked
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4871405645849329899, guid: dc1b464c81d607b498a6199cf9808188, type: 3}
-      propertyPath: rotationFace
-      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 4871405645849329899, guid: dc1b464c81d607b498a6199cf9808188, type: 3}
       propertyPath: CustomerSpwan
@@ -10419,10 +10401,6 @@ PrefabInstance:
     - target: {fileID: 4871405645849329899, guid: dc1b464c81d607b498a6199cf9808188, type: 3}
       propertyPath: isLocked
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4871405645849329899, guid: dc1b464c81d607b498a6199cf9808188, type: 3}
-      propertyPath: rotationFace
-      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 4871405645849329899, guid: dc1b464c81d607b498a6199cf9808188, type: 3}
       propertyPath: CustomerSpwan
@@ -19001,10 +18979,6 @@ PrefabInstance:
     - target: {fileID: 4871405645849329899, guid: dc1b464c81d607b498a6199cf9808188, type: 3}
       propertyPath: isLocked
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4871405645849329899, guid: dc1b464c81d607b498a6199cf9808188, type: 3}
-      propertyPath: rotationFace
-      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 4871405645849329899, guid: dc1b464c81d607b498a6199cf9808188, type: 3}
       propertyPath: CustomerSpwan

@@ -4,6 +4,7 @@ public class controlSeat : MonoBehaviour
 {
     public bool isOccupied;
     public bool isLocked;
+    public float rotationFace = 90;
 
     public CustomerSpwan CustomerSpwan;
     private GameManager GameManager;

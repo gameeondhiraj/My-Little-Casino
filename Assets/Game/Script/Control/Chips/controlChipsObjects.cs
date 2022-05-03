@@ -8,7 +8,7 @@ public class controlChipsObjects : MonoBehaviour
     public coreSection section;
     public Vector3 EndPosition;
     public float moveSpeed = 5;
-    public float force = 0.5f;
+    public float force = 7.5f;
 
     public int chipCost;
    
@@ -30,7 +30,7 @@ public class controlChipsObjects : MonoBehaviour
         controlMoney = FindObjectOfType<controlMoneyUI>();
         transform.rotation = Quaternion.Euler(Random.Range(0, 360), Random.Range(0, 360), Random.Range(0, 360));
 
-        GetComponent<Rigidbody>().AddForce(transform.up * force, ForceMode.Impulse);
+        GetComponent<Rigidbody>().AddForce(transform.up * force * 2, ForceMode.Impulse);
         GetComponent<Rigidbody>().AddForce(transform.forward * force * 0.75f, ForceMode.Impulse);
     }
 

@@ -5,10 +5,10 @@ using UnityEngine.AI;
 
 public class moveCustomer : MonoBehaviour
 {
-    private NavMeshAgent agent;
+    public NavMeshAgent agent;
     public Transform DestinationToSeat;
     public Transform DestinationToExit;
-
+    public float rotationFace = 90;
     public bool isMoving;
     public bool startTrading;
     public bool callNewCustomer;
@@ -27,6 +27,13 @@ public class moveCustomer : MonoBehaviour
 
     public void moveAgent()
     {
+        if (startTrading && DestinationToSeat)
+        {
+            rotationFace = DestinationToSeat.GetComponent<controlSeat>().rotationFace;
+            LeanTween.rotate(this.gameObject, new Vector3(0, rotationFace, 0), 0.3f);
+            startTrading = false;
+        }
+
         if (DestinationToSeat && !DestinationToExit)
         {
             agent.SetDestination(DestinationToSeat.position);

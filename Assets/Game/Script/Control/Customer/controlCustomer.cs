@@ -14,6 +14,11 @@ public class controlCustomer : MonoBehaviour
     public int spwanCount= 5;
     public float delayTime = 1;
 
+
+    [Header("Hair Color")]
+    public List<Color> hairColor = new List<Color>();
+    public SkinnedMeshRenderer Renderer;
+
     [Header("Wait Timer")]
     [Space(10)]
     public GameObject gWaitTImer;
@@ -21,7 +26,7 @@ public class controlCustomer : MonoBehaviour
     public float fWaitTime;
     private float timerNum;
 
-    private bool bettingComplete;
+    public bool bettingComplete;
 
     public bool isCustomerForTable;
     void Start()
@@ -29,6 +34,18 @@ public class controlCustomer : MonoBehaviour
         moveCustomer = GetComponent<moveCustomer>();        
         gWaitTImer.SetActive(false);
         timerNum = fWaitTime;
+
+        if (Renderer)
+        {
+            Renderer.materials[0].color = hairColor[Random.Range(0, hairColor.Count - 1)];
+
+            if (Renderer.materials.Length >= 4)
+                Renderer.materials[4].color = hairColor[Random.Range(0, hairColor.Count - 1)];
+            if (Renderer.materials.Length >= 5)
+                Renderer.materials[5].color = hairColor[Random.Range(0, hairColor.Count - 1)];
+        }
+       
+
     }
     
     void Update()
@@ -45,7 +62,7 @@ public class controlCustomer : MonoBehaviour
     {
         if (!bettingComplete && timerNum <= 0)
         {
-            for(int i=0;i<= spwanCount; i++)
+            for (int i=0;i<= spwanCount; i++)
             {
                 GameObject c = Instantiate(chips, ChipSpwanPosition.position, Quaternion.identity);
                 c.GetComponent<controlChipsObjects>().section = section;
@@ -58,30 +75,39 @@ public class controlCustomer : MonoBehaviour
                     }                    
                 }
             }
+           
         }
     }
+
     void waitTimerUpdate()
     {
-        if(moveCustomer.startTrading && timerNum > 0)
+        if(moveCustomer.startTrading && timerNum > 0 )
         {
-            LeanTween.delayedCall(0.5f, () =>
-            {
-                gWaitTImer.SetActive(true);
-                timerNum -= Time.deltaTime;
-                iWaitTimer.fillAmount = timerNum / fWaitTime;
-            });            
+            StartCoroutine(WaitTimerUI(1.5f));
         }
         if (bettingComplete && !moveCustomer.DestinationToExit)
-        {            
-            LeanTween.delayedCall(0.5f, () =>
-            {
-                if(gWaitTImer.activeSelf)
-                    gWaitTImer.SetActive(false);                
+        {
+            StartCoroutine(attachExitDestination(2.5f));            
+        }        
+    }
 
-                moveCustomer.DestinationToExit = DestinationToExit;                
-            });
-            
-        }
-        
+    IEnumerator WaitTimerUI(float t)
+    {
+        yield return new WaitForSeconds(t);
+        gWaitTImer.SetActive(true);
+        timerNum -= Time.deltaTime;
+        iWaitTimer.fillAmount = timerNum / fWaitTime;
+        if(timerNum<=0 && gWaitTImer.activeSelf)
+            gWaitTImer.SetActive(false);
+
+    }
+
+    IEnumerator attachExitDestination(float t)
+    {
+        if (gWaitTImer.activeSelf)
+            gWaitTImer.SetActive(false);
+        moveCustomer.startTrading = false;
+        yield return new WaitForSeconds(t);
+        moveCustomer.DestinationToExit = DestinationToExit;
     }
 }
