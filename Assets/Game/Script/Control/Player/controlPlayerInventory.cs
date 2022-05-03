@@ -19,11 +19,13 @@ namespace Casino.Control
         private Transform VaultPodition;
 
         private movePlayer movePlayer;
+        private AudioManager AudioManager;
 
         void Start()
         {
             CurrentLimit = MaxLimit;
             movePlayer = GetComponent<movePlayer>();
+            AudioManager = FindObjectOfType<AudioManager>();
         }
         private void Update()
         {
@@ -90,8 +92,10 @@ namespace Casino.Control
             col.transform.GetComponent<Collider>().isTrigger = true;
             col.transform.rotation = Quaternion.Euler(0, 0, 0);
             if (!Cart.Contains(col.gameObject))
-                Cart.Add(col.gameObject)
-                    ;
+            {
+                Cart.Add(col.gameObject);
+                AudioManager.source.PlayOneShot(AudioManager.collectChip);
+            }                
             return;
 
         }

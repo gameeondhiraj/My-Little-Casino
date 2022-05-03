@@ -22,9 +22,11 @@ public class controlGroundUnlock : MonoBehaviour
     public bool isLocked;
 
     private GameManager GameManager;
+    private AudioManager AudioManager;
     void Start()
     {
         GameManager = FindObjectOfType<GameManager>();
+        AudioManager = FindObjectOfType<AudioManager>();
         unlocked();
     }
     void unlocked()
@@ -46,10 +48,14 @@ public class controlGroundUnlock : MonoBehaviour
         cashCounter.text = unlockingAmount.ToString("N0");
         if (isLocked && unlockingAmount <= 0)
         {
-            isLocked = false;
-            Destroy(Instantiate(unlockPartical, transform.position, Quaternion.identity), 5);
+            if (!UnlockedObject.activeSelf)
+            {
+                Destroy(Instantiate(unlockPartical, spwanPosition.position, Quaternion.identity), 5);
+                AudioManager.source.PlayOneShot(AudioManager.areaUnlock);
+            }
             LockedObject.SetActive(false);
             UnlockedObject.SetActive(true);
+            isLocked = false;
         }
 
         if (isLocked && isPlayerNear)

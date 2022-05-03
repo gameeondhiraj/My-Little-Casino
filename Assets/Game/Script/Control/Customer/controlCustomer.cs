@@ -29,9 +29,11 @@ public class controlCustomer : MonoBehaviour
     public bool bettingComplete;
 
     public bool isCustomerForTable;
+    private AudioManager AudioManager;
     void Start()
     {
-        moveCustomer = GetComponent<moveCustomer>();        
+        moveCustomer = GetComponent<moveCustomer>();
+        AudioManager = FindObjectOfType<AudioManager>();
         gWaitTImer.SetActive(false);
         timerNum = fWaitTime;
 
@@ -71,6 +73,7 @@ public class controlCustomer : MonoBehaviour
                     if (!bettingComplete)
                     {
                         FindObjectOfType<GameManager>().CustomerCount++;
+                        AudioManager.source.PlayOneShot(AudioManager.chipDespensed);
                         bettingComplete = true;
                     }                    
                 }

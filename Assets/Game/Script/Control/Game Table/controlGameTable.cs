@@ -37,10 +37,12 @@ public class controlGameTable : MonoBehaviour
     public TextMeshProUGUI RLText;
     private float CCost = 1500;
     public TextMeshProUGUI CPText;
+
+    private AudioManager AudioManager;
     void Start()
     {
         GameManager = FindObjectOfType<GameManager>();
-
+        AudioManager = FindObjectOfType<AudioManager>();
         if (whichTableIsIt.Length > 0)
         {
             //Spwan Table from GameManager
@@ -89,6 +91,7 @@ public class controlGameTable : MonoBehaviour
             BJ.GetComponent<CustomerSpwan>().section = Section;
             Destroy(Instantiate(SpwanParticalEffect, BJ.transform.position + new Vector3(-1.5f, 0.5f, 0), Quaternion.identity), 3);
             GameTableUI.GetComponent<Animator>().Play("Game Table Exit");
+            AudioManager.source.PlayOneShot(AudioManager.areaUnlock);
             GameManager.tableCount++;
             GameManager.BJ = true;
             Roul.interactable = true;
@@ -106,6 +109,7 @@ public class controlGameTable : MonoBehaviour
             RL.GetComponent<CustomerSpwan>().section = Section;
             Destroy(Instantiate(SpwanParticalEffect, RL.transform.position + new Vector3(-1.5f, 0.5f,0), Quaternion.identity), 3);
             GameTableUI.GetComponent<Animator>().Play("Game Table Exit");
+            AudioManager.source.PlayOneShot(AudioManager.areaUnlock);
             GameManager.tableCount++;
             GameManager.RL = true;
             Craps.interactable = true;
@@ -123,6 +127,7 @@ public class controlGameTable : MonoBehaviour
             CP.GetComponent<CustomerSpwan>().section = Section;
             Destroy(Instantiate(SpwanParticalEffect, CP.transform.position + new Vector3(-1.5f, 0.5f, 0), Quaternion.identity), 3);
             GameTableUI.GetComponent<Animator>().Play("Game Table Exit");
+            AudioManager.source.PlayOneShot(AudioManager.areaUnlock);
             GameManager.tableCount++;
             GameManager.CP = true;
             GameManager.maxCash -= CCost;

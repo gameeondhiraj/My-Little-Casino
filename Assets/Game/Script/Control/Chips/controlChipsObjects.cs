@@ -20,10 +20,11 @@ public class controlChipsObjects : MonoBehaviour
 
     public bool isPlayerCollected;
     public controlMoneyUI controlMoney;
+    private AudioManager AudioManager;
     void Start()
     {
 
-
+        AudioManager = FindObjectOfType<AudioManager>();
         if (!section.chips.Contains(this.gameObject))
             section.chips.Add(this.gameObject);
 
@@ -72,6 +73,7 @@ public class controlChipsObjects : MonoBehaviour
 
     void getUI()
     {
+        AudioManager.source.PlayOneShot(AudioManager.chipRoCash);
         GameObject UI = controlMoney.CashUI[controlMoney.CashUI.Count - 1].gameObject;
         controlMoney.CashUI.Remove(controlMoney.CashUI[controlMoney.CashUI.Count - 1]);
         UI.SetActive(true);
@@ -80,7 +82,7 @@ public class controlChipsObjects : MonoBehaviour
         LeanTween.move(RUI, new Vector3(0f, 0f, 0f), 0.5f).setOnComplete(() => {
             RUI.gameObject.SetActive(false);
             controlMoney.CashUI.Add(RUI);
-            FindObjectOfType<GameManager>().maxCash += chipCost;
+            FindObjectOfType<GameManager>().maxCash += chipCost;            
         });        
     }
 
@@ -98,10 +100,12 @@ public class controlChipsObjects : MonoBehaviour
         if (other.gameObject.CompareTag("Vault"))
         {            
             Destroy(this.gameObject);
-            if(isPlayerCollected)
+            
+            if (isPlayerCollected)
                 getUI();
             else
             {
+
                 FindObjectOfType<GameManager>().maxCash += chipCost;
             }
         }

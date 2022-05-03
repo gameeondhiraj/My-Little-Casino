@@ -24,6 +24,7 @@ public class controlSeatUnlock : MonoBehaviour
 
 
     private GameManager GameManager;
+    private AudioManager AudioManager;
     private controlSeat controlSeat;
 
     
@@ -31,6 +32,7 @@ public class controlSeatUnlock : MonoBehaviour
     {
         controlSeat = this.GetComponent<controlSeat>();
         GameManager = FindObjectOfType<GameManager>();
+        AudioManager = FindObjectOfType<AudioManager>();
         unlocked();
     }
 
@@ -53,10 +55,11 @@ public class controlSeatUnlock : MonoBehaviour
         cashCounter.text = unlockingAmount.ToString("N0");
         if(controlSeat.isLocked && unlockingAmount <= 0)
         {
-            controlSeat.isLocked = false;
             Destroy(Instantiate(unlockPartical, transform.position, Quaternion.identity), 5);
             LockedObject.SetActive(false);
             UnlockedObject.SetActive(true);
+            AudioManager.source.PlayOneShot(AudioManager.areaUnlock);
+            controlSeat.isLocked = false;            
         }
 
         if (controlSeat.isLocked && isPlayerNear)

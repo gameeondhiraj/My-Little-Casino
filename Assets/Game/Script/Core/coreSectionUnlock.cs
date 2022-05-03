@@ -21,15 +21,13 @@ public class coreSectionUnlock : MonoBehaviour
     [Header("Processing")]
     [Space(5)]
     public Animator cameraAnimator;
-    
-
-
-
     private GameManager GameManager;
+    private AudioManager AudioManager;
     private bool isUnlocked;
     void Start()
     {
         GameManager = FindObjectOfType<GameManager>();
+        AudioManager = FindObjectOfType<AudioManager>();
     }
 
     
@@ -59,7 +57,11 @@ public class coreSectionUnlock : MonoBehaviour
     {
         cameraAnimator.Play(Camera);
         yield return new WaitForSeconds(t);
-        Destroy(Instantiate(unlockPartical, unlockParticalPosition.position, Quaternion.identity), 5);
+        if (!unlockedSection.activeSelf)
+        {
+            Destroy(Instantiate(unlockPartical, unlockParticalPosition.position, Quaternion.Euler(-90f,0,0)), 5);
+            AudioManager.source.PlayOneShot(AudioManager.areaUnlock);
+        }
         LockedSection.SetActive(false);
         unlockedSection.SetActive(true);
         isLocked = false;        

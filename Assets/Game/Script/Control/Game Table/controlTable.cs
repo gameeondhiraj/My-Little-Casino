@@ -23,10 +23,12 @@ public class controlTable : MonoBehaviour
 
     bool startTrade;
     private CustomerSpwan CustomerSpwan;
+    private AudioManager AudioManager;
     void Start()
     {
         timerNum = fWaitTime;
         CustomerSpwan = GetComponent<CustomerSpwan>();
+        AudioManager = FindObjectOfType<AudioManager>();
     }
 
     // Update is called once per frame
@@ -78,20 +80,24 @@ public class controlTable : MonoBehaviour
     {
         if (!isBettingComplete && startTrade && timerNum > 0)
         {
-            gWaitTImer.SetActive(true);
-            timerNum -= Time.deltaTime;
-            iWaitTimer.fillAmount = timerNum / fWaitTime;            
+            
+            StartCoroutine(WaitTImerUI(1));
         }
         if (timerNum <= 0)
         {
-           LeanTween.delayedCall(0.5f, () =>
-            {
-                if (gWaitTImer.activeSelf)
-                    gWaitTImer.SetActive(false);
-            });
+            if (gWaitTImer.activeSelf)
+                gWaitTImer.SetActive(false);
         }
     }
     bool isBettingComplete;
+
+    IEnumerator WaitTImerUI(float t)
+    {
+        yield return new WaitForSeconds(t);       
+        if (!gWaitTImer.activeSelf) gWaitTImer.SetActive(true);
+        timerNum -= Time.deltaTime;
+        iWaitTimer.fillAmount = timerNum / fWaitTime;
+    }
     void SpwanChip()
     {
         if(!isBettingComplete && timerNum <= 0)
@@ -105,27 +111,34 @@ public class controlTable : MonoBehaviour
                 {
                     if (!isBettingComplete)
                     {
-                        timerNum = fWaitTime;
+                        AudioManager.source.PlayOneShot(AudioManager.chipDespensed);
                         FindObjectOfType<GameManager>().CustomerCount += customerLimit;
                         resetTable();
-                        LeanTween.delayedCall(1f, () =>{
-                            if (gWaitTImer.activeSelf)
-                                gWaitTImer.SetActive(false);
-                            isBettingComplete = false;
-                        });
                         isBettingComplete = true;
+                        StartCoroutine(brakeLoop(1f));
                     }                   
                 }
             }
         }
     }
 
+    IEnumerator brakeLoop(float t)
+    {
+        yield return new WaitForSeconds(t);
+        if (gWaitTImer.activeSelf)
+        {
+            gWaitTImer.SetActive(false);           
+        }
+        timerNum = fWaitTime;
+        isBettingComplete = false;
+    }
     void resetTable()
     {       
         for (int i = 0; i <= Customer.Count - 1; i++)
         {
             Customer[i].GetComponent<moveCustomer>().DestinationToExit = Customer[i].GetComponent<controlCustomer>().DestinationToExit;
             Customer[i].GetComponent<moveCustomer>().startTrading = false;                        
+            Customer[i].GetComponent<controlCustomer>().bettingComplete = true;                        
         }
     }
 }

@@ -10,8 +10,7 @@ public class controlSeat : MonoBehaviour
     private GameManager GameManager;
     void Start()
     {
-        GameManager = FindObjectOfType<GameManager>();
-       
+        GameManager = FindObjectOfType<GameManager>();       
     }
 
 

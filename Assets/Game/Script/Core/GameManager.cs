@@ -56,10 +56,11 @@ public class GameManager : MonoBehaviour
     public int StaffHIreAmount = 450;
 
 
-
+    private AudioManager AudioManager;
     void Start()
     {
         Application.targetFrameRate = 60;
+        AudioManager = FindObjectOfType<AudioManager>();
         customerRequestedCount = MaxCustomerCount();
         currentCash = maxCash;
     }
@@ -154,6 +155,7 @@ public class GameManager : MonoBehaviour
         CustomerCount -= customerRequestedCount;
         customerRequestedCount = MaxCustomerCount();
         customerRequestUpdated.SetActive(false);
+        AudioManager.source.PlayOneShot(AudioManager.levelUp);
     }
 
     public void addReward()
