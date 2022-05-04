@@ -471,7 +471,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1632739844916928807}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c94b72aedee901648a6899ecc901ea20, type: 3}
+  m_Script: {fileID: 11500000, guid: 4bbe413f7ffb83d41a0b77ca3bda31f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isOccupied: 0
@@ -794,12 +794,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1632739846481132010}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c94b72aedee901648a6899ecc901ea20, type: 3}
+  m_Script: {fileID: 11500000, guid: 4bbe413f7ffb83d41a0b77ca3bda31f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isOccupied: 0
   isLocked: 0
-  rotationFace: 135
+  rotationFace: 90
   CustomerSpwan: {fileID: 1632739846493096431}
 --- !u!1 &1632739846493096429
 GameObject:
@@ -857,10 +857,10 @@ MonoBehaviour:
   spwanPosition: {fileID: 0}
   DestinationForExit: {fileID: 0}
   section: {fileID: 0}
-  SpwanCount: 0
-  VIPSpwanCount: 1
-  delayBetweenSpwan: 1.5
-  chipSpwanTime: 1
+  chipSpwanCount: 1
+  VIPChipSpwanCount: 1
+  delayBetweenChipSpwan: 0.2
+  slotMachineChipSpwanWaitTimer: 1
   isTable: 1
 --- !u!114 &1632739846493096400
 MonoBehaviour:
@@ -879,7 +879,7 @@ MonoBehaviour:
   chipSpwanPos: {fileID: 1632739845260218137}
   gWaitTImer: {fileID: 1632739845278579148}
   iWaitTimer: {fileID: 1632739844911158958}
-  fWaitTime: 3
+  fWaitTime: 5
   customerLimit: 7
   spwanCount: 9
 --- !u!1 &1868124814510383170
@@ -1166,7 +1166,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5798284250766635209}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c94b72aedee901648a6899ecc901ea20, type: 3}
+  m_Script: {fileID: 11500000, guid: 4bbe413f7ffb83d41a0b77ca3bda31f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isOccupied: 0
@@ -1214,7 +1214,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5798284250875824771}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c94b72aedee901648a6899ecc901ea20, type: 3}
+  m_Script: {fileID: 11500000, guid: 4bbe413f7ffb83d41a0b77ca3bda31f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isOccupied: 0
@@ -1262,7 +1262,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5798284251103423254}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c94b72aedee901648a6899ecc901ea20, type: 3}
+  m_Script: {fileID: 11500000, guid: 4bbe413f7ffb83d41a0b77ca3bda31f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isOccupied: 0
@@ -1310,7 +1310,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5798284251871354025}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c94b72aedee901648a6899ecc901ea20, type: 3}
+  m_Script: {fileID: 11500000, guid: 4bbe413f7ffb83d41a0b77ca3bda31f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isOccupied: 0
@@ -1358,7 +1358,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5798284251986537545}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c94b72aedee901648a6899ecc901ea20, type: 3}
+  m_Script: {fileID: 11500000, guid: 4bbe413f7ffb83d41a0b77ca3bda31f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isOccupied: 0

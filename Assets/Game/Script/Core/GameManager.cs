@@ -73,10 +73,20 @@ public class GameManager : MonoBehaviour
         LevelUIManager();
         customerSlider();
         upgrade();
-
+        TESTING();
         tableCountText.text = tableCount.ToString("N0") + "/ 4";
     }
 
+    void TESTING()
+    {
+        //////////////
+        ///Testing scripts to be written here
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            CustomerCount = MaxCustomerCount();
+        }
+        /////////////
+    }
     void cashCounter()
     {
         currentCash = Mathf.Clamp(currentCash, 0, Mathf.Infinity);
@@ -90,7 +100,14 @@ public class GameManager : MonoBehaviour
         {
             currentCash -= cashCounterSpeed * Time.deltaTime;
             if (currentCash <= maxCash) currentCash = maxCash;
-        }        
+        }
+        if (currentCash < 0 || maxCash< 0)
+        {
+            currentCash = 0;
+            maxCash = 0;
+        }
+            
+        
 
         cashUI.text = currentCash.ToString("N0");
     }
@@ -167,54 +184,50 @@ public class GameManager : MonoBehaviour
     public int MaxCustomerCount()
     {
         if (Level == 0)
-            truckCountData = 2;
-
-        if (Level == 1)
-            truckCountData = 2;
-
-        if (Level == 2)
             truckCountData = 4;
 
-        if (Level == 3)
+        if (Level == 1)
             truckCountData = 8;
-        if (Level == 4)
-            truckCountData = 12;
 
-        if (Level == 5)
+        if (Level == 2)
             truckCountData = 16;
 
-        if (Level == 6)
-            truckCountData = 20;
+        if (Level == 3)
+            truckCountData = 21;
 
-        if (Level == 7)
-            truckCountData = 24;
-
-        if (Level == 8)
-            truckCountData = 28;
-
-        if (Level == 9)
+        if (Level == 4)
             truckCountData = 32;
 
-        if (Level == 10)
-            truckCountData = 36;
-
-        if (Level == 11)
-            truckCountData = 40;
-
-        if (Level == 12)
-            truckCountData = 44;
-
-        if (Level == 13)
+        if (Level == 5)
             truckCountData = 48;
 
-        if (Level == 14)
-            truckCountData = 52;
+        if (Level == 6)
+            truckCountData = 64;
 
-        if (Level == 15)
-            truckCountData = 56;
+        if (Level == 7)
+            truckCountData = 84;
 
-        if (Level >= 16)
-            truckCountData = Random.Range(56, 80);
+        if (Level == 8)
+            truckCountData = 120;
+
+        if (Level == 9)
+            truckCountData = 180;
+
+        if (Level == 10)
+            truckCountData = 240;
+
+        if (Level == 11)
+            truckCountData = 300;
+
+        if (Level == 12)
+            truckCountData = 360;
+
+        if (Level == 13)
+            truckCountData = 480;
+
+        if (Level >= 14)
+            truckCountData = Random.Range(84, 300);
+
         return truckCountData;
     }
 

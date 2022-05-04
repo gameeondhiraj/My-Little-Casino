@@ -11,7 +11,7 @@ public class controlCustomer : MonoBehaviour
     public GameObject chips;
     public Transform DestinationToExit;
     public Transform ChipSpwanPosition;
-    public int spwanCount= 5;
+    public int chipSpwanCount= 5;
     public float delayTime = 1;
 
 
@@ -64,11 +64,11 @@ public class controlCustomer : MonoBehaviour
     {
         if (!bettingComplete && timerNum <= 0)
         {
-            for (int i=0;i<= spwanCount; i++)
+            for (int i=0;i<= chipSpwanCount; i++)
             {
                 GameObject c = Instantiate(chips, ChipSpwanPosition.position, Quaternion.identity);
                 c.GetComponent<controlChipsObjects>().section = section;
-                if (i >= spwanCount - 1)
+                if (i >= chipSpwanCount - 1)
                 {
                     if (!bettingComplete)
                     {

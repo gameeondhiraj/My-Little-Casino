@@ -164,6 +164,12 @@ TextureImporter:
   - first:
       213: 6941498468933143381
     second: MyLittleCasino_UI_SpritesheetV01_53
+  - first:
+      213: 4307623521467325329
+    second: MyLittleCasino_UI_SpritesheetV01_55
+  - first:
+      213: 7245790024536546413
+    second: MyLittleCasino_UI_SpritesheetV01_56
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -1418,6 +1424,69 @@ TextureImporter:
       bones: []
       spriteID: 55b8da17418255060800000000000000
       internalID: 6941498468933143381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MyLittleCasino_UI_SpritesheetV01_54
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 341
+        width: 178
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45470b6952c7034a0800000000000000
+      internalID: -6615651351723477932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MyLittleCasino_UI_SpritesheetV01_55
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 213
+        width: 237
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19b5d2f15c0c7cb30800000000000000
+      internalID: 4307623521467325329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MyLittleCasino_UI_SpritesheetV01_56
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 34
+        width: 154
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6cd19133a73e8460800000000000000
+      internalID: 7245790024536546413
       vertices: []
       indices: 
       edges: []

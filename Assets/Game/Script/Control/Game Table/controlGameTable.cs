@@ -15,6 +15,7 @@ public class controlGameTable : MonoBehaviour
     [Header("Prefab Object")]
     [Space(5)]
     public Transform SpwanPosition;
+    public Transform DestinationForExit;
     public coreSection Section;
 
     [Header("List of Table")]
@@ -38,6 +39,8 @@ public class controlGameTable : MonoBehaviour
     private float CCost = 1500;
     public TextMeshProUGUI CPText;
 
+
+    public GameObject Border;
     private AudioManager AudioManager;
     void Start()
     {
@@ -89,6 +92,7 @@ public class controlGameTable : MonoBehaviour
             BJ.transform.localPosition = new Vector3(0, 0, 0);
             BJ.GetComponent<CustomerSpwan>().spwanPosition = SpwanPosition;
             BJ.GetComponent<CustomerSpwan>().section = Section;
+            BJ.GetComponent<CustomerSpwan>().DestinationForExit = DestinationForExit;
             Destroy(Instantiate(SpwanParticalEffect, BJ.transform.position + new Vector3(-1.5f, 0.5f, 0), Quaternion.identity), 3);
             GameTableUI.GetComponent<Animator>().Play("Game Table Exit");
             AudioManager.source.PlayOneShot(AudioManager.areaUnlock);
@@ -96,6 +100,7 @@ public class controlGameTable : MonoBehaviour
             GameManager.BJ = true;
             Roul.interactable = true;
             GameManager.maxCash -= BCost;
+            Border.SetActive(false);
         }
         
     }
@@ -107,6 +112,7 @@ public class controlGameTable : MonoBehaviour
             RL.transform.localPosition = new Vector3(0, 0, 0);
             RL.GetComponent<CustomerSpwan>().spwanPosition = SpwanPosition;
             RL.GetComponent<CustomerSpwan>().section = Section;
+            RL.GetComponent<CustomerSpwan>().DestinationForExit = DestinationForExit;
             Destroy(Instantiate(SpwanParticalEffect, RL.transform.position + new Vector3(-1.5f, 0.5f,0), Quaternion.identity), 3);
             GameTableUI.GetComponent<Animator>().Play("Game Table Exit");
             AudioManager.source.PlayOneShot(AudioManager.areaUnlock);
@@ -114,6 +120,7 @@ public class controlGameTable : MonoBehaviour
             GameManager.RL = true;
             Craps.interactable = true;
             GameManager.maxCash -= RCost;
+            Border.SetActive(false);
         }
             
     }
@@ -124,6 +131,7 @@ public class controlGameTable : MonoBehaviour
             GameObject CP = Instantiate(CRAPS, baseT);
             CP.transform.localPosition = new Vector3(0, 0, 0);
             CP.GetComponent<CustomerSpwan>().spwanPosition = SpwanPosition;
+            CP.GetComponent<CustomerSpwan>().DestinationForExit = DestinationForExit;
             CP.GetComponent<CustomerSpwan>().section = Section;
             Destroy(Instantiate(SpwanParticalEffect, CP.transform.position + new Vector3(-1.5f, 0.5f, 0), Quaternion.identity), 3);
             GameTableUI.GetComponent<Animator>().Play("Game Table Exit");
@@ -131,6 +139,7 @@ public class controlGameTable : MonoBehaviour
             GameManager.tableCount++;
             GameManager.CP = true;
             GameManager.maxCash -= CCost;
+            Border.SetActive(false);
         }            
     }
 

@@ -41,12 +41,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 156462025072616607}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c94b72aedee901648a6899ecc901ea20, type: 3}
+  m_Script: {fileID: 11500000, guid: 4bbe413f7ffb83d41a0b77ca3bda31f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isOccupied: 0
   isLocked: 0
-  rotationFace: -50
+  rotationFace: -40
   CustomerSpwan: {fileID: 4968826711100647411}
 --- !u!1 &156462025199279829
 GameObject:
@@ -89,7 +89,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 156462025199279829}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c94b72aedee901648a6899ecc901ea20, type: 3}
+  m_Script: {fileID: 11500000, guid: 4bbe413f7ffb83d41a0b77ca3bda31f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isOccupied: 0
@@ -137,7 +137,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 156462026177020501}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c94b72aedee901648a6899ecc901ea20, type: 3}
+  m_Script: {fileID: 11500000, guid: 4bbe413f7ffb83d41a0b77ca3bda31f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isOccupied: 0
@@ -185,12 +185,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 156462026308203189}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c94b72aedee901648a6899ecc901ea20, type: 3}
+  m_Script: {fileID: 11500000, guid: 4bbe413f7ffb83d41a0b77ca3bda31f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isOccupied: 0
   isLocked: 0
-  rotationFace: -70
+  rotationFace: -90
   CustomerSpwan: {fileID: 4968826711100647411}
 --- !u!1 &156462027143529738
 GameObject:
@@ -233,7 +233,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 156462027143529738}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c94b72aedee901648a6899ecc901ea20, type: 3}
+  m_Script: {fileID: 11500000, guid: 4bbe413f7ffb83d41a0b77ca3bda31f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isOccupied: 0
@@ -796,7 +796,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4968826709701093420}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c94b72aedee901648a6899ecc901ea20, type: 3}
+  m_Script: {fileID: 11500000, guid: 4bbe413f7ffb83d41a0b77ca3bda31f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isOccupied: 0
@@ -1122,12 +1122,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 4968826710597226299}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c94b72aedee901648a6899ecc901ea20, type: 3}
+  m_Script: {fileID: 11500000, guid: 4bbe413f7ffb83d41a0b77ca3bda31f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isOccupied: 0
   isLocked: 0
-  rotationFace: 50
+  rotationFace: 40
   CustomerSpwan: {fileID: 4968826711100647411}
 --- !u!1 &4968826710603004080
 GameObject:
@@ -1245,7 +1245,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4968826711096072182}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c94b72aedee901648a6899ecc901ea20, type: 3}
+  m_Script: {fileID: 11500000, guid: 4bbe413f7ffb83d41a0b77ca3bda31f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isOccupied: 0
@@ -1308,10 +1308,10 @@ MonoBehaviour:
   spwanPosition: {fileID: 0}
   DestinationForExit: {fileID: 0}
   section: {fileID: 0}
-  SpwanCount: 0
-  VIPSpwanCount: 1
-  delayBetweenSpwan: 1.5
-  chipSpwanTime: 1
+  chipSpwanCount: 1
+  VIPChipSpwanCount: 1
+  delayBetweenChipSpwan: 0.2
+  slotMachineChipSpwanWaitTimer: 1
   isTable: 1
 --- !u!114 &4968826711100647372
 MonoBehaviour:
@@ -1330,7 +1330,7 @@ MonoBehaviour:
   chipSpwanPos: {fileID: 4968826710371082501}
   gWaitTImer: {fileID: 4968826710151403472}
   iWaitTimer: {fileID: 4968826710603004082}
-  fWaitTime: 3
+  fWaitTime: 5
   customerLimit: 7
   spwanCount: 11
 --- !u!1 &4968826711242335556
@@ -1374,7 +1374,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4968826711242335556}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c94b72aedee901648a6899ecc901ea20, type: 3}
+  m_Script: {fileID: 11500000, guid: 4bbe413f7ffb83d41a0b77ca3bda31f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isOccupied: 0
@@ -1422,12 +1422,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 4968826711288272075}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c94b72aedee901648a6899ecc901ea20, type: 3}
+  m_Script: {fileID: 11500000, guid: 4bbe413f7ffb83d41a0b77ca3bda31f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isOccupied: 0
   isLocked: 0
-  rotationFace: 135
+  rotationFace: 130
   CustomerSpwan: {fileID: 4968826711100647411}
 --- !u!1 &5137917052595714005
 GameObject:

@@ -49,16 +49,18 @@ namespace Casino.Control
 
         public float yOffsetIncrese = 0.12f;
         public float stifness = 30;
+
+        
         void stackLearping()
         {
+            float x = Mathf.Clamp(movePlayer.direction.magnitude, 0.5f, 1f);            
             if (Cart.Count > 1)
             {
                 Vector3 previousGameObjectPos = Cart[0].transform.position;
 
                 for (int i = 1; i < Cart.Count; i++)
                 {
-                    Cart[i].transform.position = Vector3.Lerp(Cart[i].transform.position, new Vector3(previousGameObjectPos.x, previousGameObjectPos.y + yOffsetIncrese, previousGameObjectPos.z), stifness * Time.fixedDeltaTime);
-                    //Cart[i].transform.position = new Vector3(Cart[i].transform.position.x, Cart[i].transform.position.y, previousGameObjectPos.z);
+                    Cart[i].transform.position = Vector3.Lerp(Cart[i].transform.position, new Vector3(previousGameObjectPos.x, previousGameObjectPos.y + yOffsetIncrese, previousGameObjectPos.z), (stifness * Time.fixedDeltaTime) * x);
                     previousGameObjectPos = Cart[i].transform.position;
                 }
             }
@@ -100,10 +102,10 @@ namespace Casino.Control
 
         }
 
-        float x = 0.03f;
+        float x = 0.01f;
         public void SellCartItem()
         {
-            if (SellItemInVault && Cart.Count > 0)
+            if (SellItemInVault && Cart.Count > 1)
             {
                 if (x > 0)
                     x -= Time.deltaTime;
@@ -115,7 +117,7 @@ namespace Casino.Control
                     //Cart[Cart.Count - 1].transform.GetComponent<controlChipsObjects>().moveSpeed += 35;
                     Cart[Cart.Count - 1].transform.GetComponent<controlChipsObjects>().isMove = true;
                     Cart.Remove(Cart[Cart.Count - 1]);
-                    x = 0.03f;
+                    x = 0.01f;
                 }
             }
         }
@@ -126,7 +128,7 @@ namespace Casino.Control
                 if (Cart.Count <= MaxLimit)
                 {
                     onTouchChips(other);
-                    ArrangeObjectInCart();
+                    //ArrangeObjectInCart();
                 }
             }
         }

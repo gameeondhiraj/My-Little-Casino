@@ -20,6 +20,7 @@ public class controlStaffSpwanner : MonoBehaviour
 
     public int HireCount;
     public int maxHireCount = 4;
+    public bool isLocked = true;
     public bool isPlayerNear;
     public bool isClickedOnCloseButton;
     private GameManager GameManager;
@@ -36,11 +37,7 @@ public class controlStaffSpwanner : MonoBehaviour
     void Update()
     {
         Amount.text = GameManager.StaffHIreAmount.ToString("N0");
-
-        if (Input.GetKeyDown(KeyCode.P))
-            Hire();
-
-        openUI();
+        if (!isLocked) openUI();
     }
 
 
@@ -65,7 +62,7 @@ public class controlStaffSpwanner : MonoBehaviour
             GameManager.maxCash -= GameManager.StaffHIreAmount;
             staff.GetComponent<controlStaff>().section = coreSection;
             HireCount++;
-            GameManager.StaffHIreAmount += 150;
+            GameManager.StaffHIreAmount += 120;
             onClickCloseButton();
         }
     }
@@ -73,7 +70,8 @@ public class controlStaffSpwanner : MonoBehaviour
     public void openUI()
     {
         if (GameManager.maxCash < GameManager.StaffHIreAmount) HireButton.interactable = false;
-        if (GameManager.maxCash >= GameManager.StaffHIreAmount) HireButton.interactable = true;
+        if (HireCount > maxHireCount) HireButton.interactable = false;
+        if (GameManager.maxCash >= GameManager.StaffHIreAmount && HireCount < maxHireCount) HireButton.interactable = true;
 
 
         if (isPlayerNear && !isClickedOnCloseButton)

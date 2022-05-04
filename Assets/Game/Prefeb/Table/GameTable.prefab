@@ -1841,6 +1841,7 @@ MonoBehaviour:
   BJText: {fileID: 4997949613657100853}
   RLText: {fileID: 881551536819335170}
   CPText: {fileID: 1605803123752583820}
+  Border: {fileID: 5875025747248060369}
 --- !u!54 &4997949613041754759
 Rigidbody:
   m_ObjectHideFlags: 0

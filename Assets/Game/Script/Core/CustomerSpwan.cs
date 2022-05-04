@@ -11,10 +11,10 @@ public class CustomerSpwan : MonoBehaviour
     public Transform DestinationForExit;
     public coreSection section;
 
-    public int SpwanCount = 1;
-    public int VIPSpwanCount = 1;
-    public float delayBetweenSpwan = 0.2f;
-    public float chipSpwanTime = 1;
+    public int chipSpwanCount = 1;
+    public int VIPChipSpwanCount = 1;
+    public float delayBetweenChipSpwan = 0.2f;
+    public float slotMachineChipSpwanWaitTimer = 1;
     public bool isTable;
 
 
@@ -46,10 +46,10 @@ public class CustomerSpwan : MonoBehaviour
             c.GetComponent<moveCustomer>().DestinationToSeat = AvailableSeats[AvailableSeats.Count - 1].transform;
             c.GetComponent<controlCustomer>().section = section;
             c.GetComponent<controlCustomer>().DestinationToExit = DestinationForExit;
-            c.GetComponent<controlCustomer>().spwanCount = SpwanCount;
-            c.GetComponent<controlCustomer>().fWaitTime = chipSpwanTime;
+            c.GetComponent<controlCustomer>().chipSpwanCount = chipSpwanCount;
+            c.GetComponent<controlCustomer>().fWaitTime = slotMachineChipSpwanWaitTimer;
             AvailableSeats[AvailableSeats.Count - 1].GetComponent<controlSeat>().isOccupied = true;
-            x = delayBetweenSpwan;
+            x = delayBetweenChipSpwan;
         }
 
         //////VIPCustomer Spwan////////
@@ -62,8 +62,8 @@ public class CustomerSpwan : MonoBehaviour
             c.GetComponent<moveCustomer>().DestinationToSeat = AvailableSeats[AvailableSeats.Count - 1].transform;
             c.GetComponent<controlCustomer>().section = section;
             c.GetComponent<controlCustomer>().DestinationToExit = DestinationForExit;
-            c.GetComponent<controlCustomer>().spwanCount = VIPSpwanCount;
-            c.GetComponent<controlCustomer>().fWaitTime = chipSpwanTime;
+            c.GetComponent<controlCustomer>().chipSpwanCount = VIPChipSpwanCount;
+            c.GetComponent<controlCustomer>().fWaitTime = slotMachineChipSpwanWaitTimer;
             AvailableSeats[AvailableSeats.Count - 1].GetComponent<controlSeat>().isOccupied = true;
             y = Random.Range(2, 3.5f);
         }
@@ -80,12 +80,12 @@ public class CustomerSpwan : MonoBehaviour
             c.transform.position = spwanPosition.position;
             c.GetComponent<moveCustomer>().DestinationToSeat = AvailableSeats[AvailableSeats.Count - 1].transform;
             c.GetComponent<controlCustomer>().section = section;
-            c.GetComponent<controlCustomer>().DestinationToExit = spwanPosition;
-            c.GetComponent<controlCustomer>().spwanCount = SpwanCount;
+            c.GetComponent<controlCustomer>().DestinationToExit = DestinationForExit;
+            c.GetComponent<controlCustomer>().chipSpwanCount = chipSpwanCount;
             c.GetComponent<controlCustomer>().isCustomerForTable = true;
             c.GetComponent<controlCustomer>().table = GetComponent<controlTable>();
             AvailableSeats[AvailableSeats.Count - 1].GetComponent<controlSeat>().isOccupied = true;
-            x = delayBetweenSpwan;
+            x = delayBetweenChipSpwan;
         }
     }
 }

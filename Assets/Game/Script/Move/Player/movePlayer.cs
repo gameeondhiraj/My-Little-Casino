@@ -15,7 +15,7 @@ public class movePlayer : MonoBehaviour
     //public TextMeshProUGUI playerVelocity;
 
 
-    private CharacterController CharacterController;
+    public CharacterController CharacterController;
     private float turnSmoothVelocity;
 
 

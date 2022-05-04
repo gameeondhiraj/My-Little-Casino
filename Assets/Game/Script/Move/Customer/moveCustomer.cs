@@ -49,8 +49,8 @@ public class moveCustomer : MonoBehaviour
         {
             if(!callNewCustomer)
             {
-                if (!controlCustomer.isCustomerForTable) StartCoroutine(NewCustomerCall(1));
-                if (controlCustomer.isCustomerForTable) StartCoroutine(NewCustomerCall(6));
+                if (!controlCustomer.isCustomerForTable) StartCoroutine(NewCustomerCall(1f));
+                if (controlCustomer.isCustomerForTable) StartCoroutine(NewCustomerCall(6f));
             }
             if(callNewCustomer && DestinationToSeat != null)
             {
