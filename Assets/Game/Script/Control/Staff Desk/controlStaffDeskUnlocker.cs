@@ -22,6 +22,12 @@ public class controlStaffDeskUnlocker : MonoBehaviour
     public bool isPlayerNear;
     public bool isStaffDeskOne;
 
+    [Header("Cinemachine")]
+    [Space(10)]
+    public Animator cinemachineCamera;
+    public string sCamera;
+    public float transitionDelay = 1f;
+
 
     private GameManager GameManager;
     private AudioManager AudioManager;
@@ -53,17 +59,35 @@ public class controlStaffDeskUnlocker : MonoBehaviour
 
    void unlock()
     {
-        cashCounter.text = "Rech level 4 to unlock";
+        cashCounter.text = "Reach level 4 to unlock";
         if (controlStaffDesk.isLocked && unlockingAmount <= 0)
         {
-            Destroy(Instantiate(unlockPartical, transform.position, Quaternion.identity), 5);
+            StartCoroutine(unlockDesk(transitionDelay));
+        }
+        if(!controlStaffDesk.isLocked && unlockingAmount <= 0 && !UnlockedObject.activeSelf)
+        {
             LockedObject.SetActive(false);
             UnlockedObject.SetActive(true);
-            AudioManager.source.PlayOneShot(AudioManager.areaUnlock);
-            controlStaffDesk.isLocked = false;
         }
-        if (GameManager.Level >= 4)
+
+        if (GameManager.Level >= 3)
             unlockingAmount = 0;
+    }
+
+    IEnumerator unlockDesk(float t)
+    {
+        cinemachineCamera.Play(sCamera);
+        yield return new WaitForSeconds(t);        
+        LockedObject.SetActive(false);        
+        if (!UnlockedObject.activeSelf)
+        {
+            Destroy(Instantiate(unlockPartical, transform.position, Quaternion.identity), 5);
+            AudioManager.source.PlayOneShot(AudioManager.areaUnlock);
+            UnlockedObject.SetActive(true);
+        }
+               
+
+        controlStaffDesk.isLocked = false;
     }
     void moneyManagement()
     {

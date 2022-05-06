@@ -26,7 +26,7 @@ namespace Casino.Control
         void characterAnimation()
         {
             Animation.SetFloat("speed", movePlayer.direction.magnitude);
-            if (playerInventory.Cart.Count > 1)
+            if (playerInventory.Cart.Count > 0)
             {
                 Animation.SetBool("hold", true);
             }

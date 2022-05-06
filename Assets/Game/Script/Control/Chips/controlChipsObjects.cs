@@ -11,7 +11,7 @@ public class controlChipsObjects : MonoBehaviour
     public float force = 7.5f;
 
     public int chipCost;
-   
+
     public int objectHeight;
     public bool isMove;
     public bool isDestroy;
@@ -29,10 +29,8 @@ public class controlChipsObjects : MonoBehaviour
             section.chips.Add(this.gameObject);
 
         controlMoney = FindObjectOfType<controlMoneyUI>();
-        transform.rotation = Quaternion.Euler(Random.Range(0, 360), Random.Range(0, 360), Random.Range(0, 360));
 
-        GetComponent<Rigidbody>().AddForce(transform.up * force * 2, ForceMode.Impulse);
-        GetComponent<Rigidbody>().AddForce(transform.forward * force * 0.75f, ForceMode.Impulse);
+        GetComponent<Rigidbody>().AddForce(new Vector3(Random.Range(-1f * force, 1f * force), Random.Range(-1f * force, 1f * force) * 3, Random.Range(-1f * force, 1f * force)), ForceMode.Impulse);
     }
 
     // Update is called once per frame
@@ -62,7 +60,7 @@ public class controlChipsObjects : MonoBehaviour
             GetComponent<Collider>().isTrigger = true;
 
         }
-        if ( isMove && Vector3.Distance(transform.localPosition , EndPosition) < 0.3f)
+        if (isMove && Vector3.Distance(transform.localPosition, EndPosition) < 0.3f)
         {
             transform.localPosition = EndPosition;
             transform.localRotation = Quaternion.Euler(0, 0, 0);
@@ -79,33 +77,38 @@ public class controlChipsObjects : MonoBehaviour
         UI.SetActive(true);
         UI.transform.position = Camera.main.WorldToScreenPoint(transform.position);
         RectTransform RUI = UI.GetComponent<RectTransform>();
-        LeanTween.move(RUI, new Vector3(0f, 0f, 0f), 0.5f).setOnComplete(() => {
+        LeanTween.move(RUI, new Vector3(0f, 0f, 0f), 0.5f).setOnComplete(() =>
+        {
             RUI.gameObject.SetActive(false);
             controlMoney.CashUI.Add(RUI);
-            FindObjectOfType<GameManager>().maxCash += chipCost;            
-        });        
+            FindObjectOfType<GameManager>().maxCash += chipCost;
+        });
     }
 
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
-            /*GetComponent<Rigidbody>().isKinematic = true;
-            GetComponent<Collider>().isTrigger = true;*/
+            LeanTween.delayedCall(0.5f,() => {
+                GetComponent<Rigidbody>().isKinematic = true;
+            });
+            
+            //GetComponent<Collider>().isTrigger = true;
             /*transform.rotation = Quaternion.Euler(0, 0, 0);*/
         }
     }
+
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Vault"))
-        {            
+        {
             Destroy(this.gameObject);
-            
+
             if (isPlayerCollected)
                 getUI();
             else
             {
-
                 FindObjectOfType<GameManager>().maxCash += chipCost;
             }
         }

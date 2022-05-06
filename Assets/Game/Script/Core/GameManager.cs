@@ -59,7 +59,7 @@ public class GameManager : MonoBehaviour
     private AudioManager AudioManager;
     void Start()
     {
-        Application.targetFrameRate = 60;
+        Application.targetFrameRate = 120;
         AudioManager = FindObjectOfType<AudioManager>();
         customerRequestedCount = MaxCustomerCount();
         currentCash = maxCash;
@@ -74,7 +74,7 @@ public class GameManager : MonoBehaviour
         customerSlider();
         upgrade();
         TESTING();
-        tableCountText.text = tableCount.ToString("N0") + "/ 4";
+        tableCountText.text = tableCount.ToString("N0") + "/4";
     }
 
     void TESTING()
@@ -156,7 +156,7 @@ public class GameManager : MonoBehaviour
         {
             customerRequestUpdated.SetActive(true);
         }
-        if (Level == 4 || Level == 9)
+        if (Level == 3 || Level ==8)
         {
             LockedSection.SetActive(true);
         }
@@ -243,16 +243,16 @@ public class GameManager : MonoBehaviour
             RewardMoney = 250;
 
         if (Level == 3)
-            RewardMoney = 500;
+            RewardMoney = 0;
 
         if (Level == 4)
             RewardMoney = 0;
 
         if (Level == 5)
-            RewardMoney = 1000;
+            RewardMoney = 500;
 
         if (Level == 6)
-            RewardMoney = 0;
+            RewardMoney = 1000;
 
         if (Level == 7)
             RewardMoney = 1500;
@@ -261,10 +261,10 @@ public class GameManager : MonoBehaviour
             RewardMoney = 2000;
 
         if (Level == 9)
-            RewardMoney = 2500;
+            RewardMoney = 0;
 
         if (Level == 10)
-            RewardMoney = 0;
+            RewardMoney = 2500;
 
         if (Level == 11)
             RewardMoney = 4000;

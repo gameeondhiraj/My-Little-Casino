@@ -2,13 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using System;
+
 
 public class controlTable : MonoBehaviour
 {
     public List<GameObject> Customer = new List<GameObject>();
+    public List<Transform> chipSpwanPositionList = new List<Transform>();
     public GameObject chips;
-    public Transform chipSpwanPos;
+    //public Transform chipSpwanPos;
 
     [Header("Wait Timer")]
     [Space(10)]
@@ -54,17 +55,22 @@ public class controlTable : MonoBehaviour
             if(Customer.Count>=customerLimit)
                 startTrade = Customer.TrueForAll(Customer => Customer.GetComponent<moveCustomer>().startTrading == true);
         }
-       /* if (Customer.Count > 0)
+        foreach (GameObject g in Customer)
         {
-            for(int i = 0; i <= Customer.Count - 1; i++)
-            {
-                if (Customer[i] == null)
-                {
-                    Customer.Remove(Customer[i]);
-                }
-                if (i >= Customer.Count - 1) i = 0;
-            }            
-        }*/
+            if (g == null)
+                Customer.Remove(g);
+        }
+        /* if (Customer.Count > 0)
+         {
+             for(int i = 0; i <= Customer.Count - 1; i++)
+             {
+                 if (Customer[i] == null)
+                 {
+                     Customer.Remove(Customer[i]);
+                 }
+                 if (i >= Customer.Count - 1) i = 0;
+             }            
+         }*/
     }
 
     public bool checkIfAllTrue()
@@ -104,8 +110,10 @@ public class controlTable : MonoBehaviour
         {
             for (int i = 0; i <= spwanCount; i++)
             {
-                GameObject c = Instantiate(chips, chipSpwanPos.position, Quaternion.identity);
+                GameObject c = Instantiate(chips, chipSpwanPositionList[Random.Range(0,chipSpwanPositionList.Count-1)].position, Quaternion.identity);
+
                 c.GetComponent<controlChipsObjects>().section = CustomerSpwan.section;
+                c.GetComponent<controlChipsObjects>().force = 5f;
 
                 if (i >= spwanCount - 1)
                 {

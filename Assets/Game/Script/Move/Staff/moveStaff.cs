@@ -90,7 +90,7 @@ public class moveStaff : MonoBehaviour
             isWakTowardVault = true;
             isWalkTowardInitPosition = false;
         }
-        if(ControlStaff.Cart.Count <= ControlStaff.maxLimit && section.chips.Count <= 0)
+        if(!TargetToChip && ControlStaff.Cart.Count <= ControlStaff.maxLimit && section.chips.Count <= 0)
         {
             if(!ControlStaff.SellItemInVault)
             {

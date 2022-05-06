@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class controlStaff : MonoBehaviour
 {
@@ -23,10 +24,13 @@ public class controlStaff : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        stackLearping();
-        if (Cart.Count >= maxLimit) Collector.isTrigger = true; else { Collector.isTrigger = false; }
+        //stackLearping();
+        //if (Cart.Count >= maxLimit) Collector.isTrigger = true; else { Collector.isTrigger = false; }
         if (Cart.Count > 0)
+        {
+            clear();
             SellCartItem();
+        }
     }
 
     public float yOffsetIncrese = 0.12f;
@@ -46,11 +50,16 @@ public class controlStaff : MonoBehaviour
     }
     void clear()
     {
+        //Cart = Cart.Where(item => item != null).ToList();
         for (int i = 0; i <= Cart.Count - 1; i++)
         {
             if (Cart[i] == null)
             {
                 Cart.Remove(Cart[i]);
+            }
+            if (Cart[i] != null)
+            {
+                Cart[i].GetComponent<controlChipsObjects>().isStacked = true;
             }
         }
     }
@@ -78,38 +87,40 @@ public class controlStaff : MonoBehaviour
     }
     public void ArrangeObjectInCart()
     {
-        if (Cart.Count == 1)
+      /*  if (Cart.Count == 1)
         {
             Cart[0].transform.GetComponent<controlChipsObjects>().EndPosition = startPosition;
             return;
-        }
-        /* if (Cart.Count > 1)
+        }*/
+         if (Cart.Count > 0)
          {
              Cart[Cart.Count - 1].GetComponent<controlChipsObjects>().EndPosition =
                  new Vector3(Cart[Cart.Count - 2].GetComponent<controlChipsObjects>().EndPosition.x,
                  Cart[Cart.Count - 2].GetComponent<controlChipsObjects>().EndPosition.y + 0.12f,
                  Cart[Cart.Count - 2].GetComponent<controlChipsObjects>().EndPosition.z);
              return;
-         }*/
+         }
     }
 
-    public void onTouchChips(Collision col)
+    public void onTouchChips(Collider col)
     {
-        if (Cart.Count < 1)
+        if (!col.GetComponent<controlChipsObjects>().isStacked)
         {
+            col.transform.GetComponent<controlChipsObjects>().isStacked = true;
             col.transform.parent = Inventory;
             col.transform.GetComponent<controlChipsObjects>().isMove = true;
+            col.transform.GetComponent<Rigidbody>().isKinematic = true;
+            col.transform.GetComponent<Collider>().isTrigger = true;
+            col.transform.rotation = Quaternion.Euler(0, 0, 0);
+            if (!Cart.Contains(col.gameObject))
+            {
+                Cart.Add(col.gameObject);
+            }
+            return;
         }
-        col.transform.GetComponent<controlChipsObjects>().isStacked = true;
-        col.transform.GetComponent<Rigidbody>().isKinematic = true;
-        col.transform.GetComponent<Collider>().isTrigger = true;
-        col.transform.rotation = Quaternion.Euler(0, 0, 0);
-        if (!Cart.Contains(col.gameObject))
-            Cart.Add(col.gameObject);
-        return;
-
     }
-    private void OnCollisionEnter(Collision other)
+
+    private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Chip") && !other.transform.GetComponent<controlChipsObjects>().isMove)
         {
@@ -119,6 +130,17 @@ public class controlStaff : MonoBehaviour
                 ArrangeObjectInCart();
             }
         }
+    }
+    private void OnCollisionEnter(Collision other)
+    {
+       /* if (other.gameObject.CompareTag("Chip") && !other.transform.GetComponent<controlChipsObjects>().isMove)
+        {
+            if (Cart.Count <= maxLimit)
+            {
+                onTouchChips(other);
+                ArrangeObjectInCart();
+            }
+        }*/
     }
 
     private void OnTriggerStay(Collider other)
