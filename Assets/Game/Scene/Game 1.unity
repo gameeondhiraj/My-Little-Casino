@@ -24873,7 +24873,7 @@ MonoBehaviour:
   UnlockedObject: {fileID: 465104507}
   isPlayerNear: 0
   isLocked: 1
-  t: {fileID: 0}
+  t: {fileID: 984094181}
 --- !u!4 &1471137680 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000010156700966, guid: 03efb12d920ca45feb97c225e20f3815, type: 3}
@@ -33857,7 +33857,7 @@ MonoBehaviour:
   UnlockedObject: {fileID: 772862505}
   isPlayerNear: 0
   isLocked: 1
-  t: {fileID: 0}
+  t: {fileID: 1960560654}
 --- !u!1001 &2055864054
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39998,7 +39998,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!222 &1162499373931160774
 CanvasRenderer:
   m_ObjectHideFlags: 0
