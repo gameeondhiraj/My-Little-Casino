@@ -321,6 +321,36 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &413511628665848610
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7820148193061656460}
+  m_Layer: 0
+  m_Name: Inventory
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7820148193061656460
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 413511628665848610}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.344, y: 0, z: -0.006}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4968826711100647410}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &692625439398605686
 GameObject:
   m_ObjectHideFlags: 0
@@ -842,9 +872,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4968826709824834360}
-  m_Layer: 0
+  - component: {fileID: 4962072186805728371}
+  m_Layer: 15
   m_Name: GFX
-  m_TagString: Untagged
+  m_TagString: Seat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -865,6 +896,19 @@ Transform:
   m_Father: {fileID: 4968826711100647410}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &4962072186805728371
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4968826709824834367}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.8211856, y: 0.8137517, z: 3.0571966}
+  m_Center: {x: -0.4105928, y: 0.09312415, z: -0.08889127}
 --- !u!1 &4968826710151403472
 GameObject:
   m_ObjectHideFlags: 0
@@ -1299,6 +1343,7 @@ GameObject:
   - component: {fileID: 4968826711100647410}
   - component: {fileID: 4968826711100647411}
   - component: {fileID: 4968826711100647372}
+  - component: {fileID: 1318605283279190092}
   m_Layer: 0
   m_Name: CRAPS
   m_TagString: Untagged
@@ -1321,6 +1366,7 @@ Transform:
   - {fileID: 4968826710209962642}
   - {fileID: 6967166631439279978}
   - {fileID: 4968826710371082501}
+  - {fileID: 7820148193061656460}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1375,6 +1421,20 @@ MonoBehaviour:
   fWaitTime: 5
   customerLimit: 7
   spwanCount: 11
+--- !u!114 &1318605283279190092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4968826711100647409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b383bb61faad53b4597d113ab8a7ec0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Cart: []
+  cartPosition: {fileID: 7820148193061656460}
 --- !u!1 &4968826711242335556
 GameObject:
   m_ObjectHideFlags: 0

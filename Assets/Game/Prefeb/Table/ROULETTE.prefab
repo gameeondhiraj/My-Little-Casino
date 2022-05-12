@@ -736,9 +736,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1632739845756265764}
-  m_Layer: 0
+  - component: {fileID: 8848034633162394955}
+  m_Layer: 15
   m_Name: GFX
-  m_TagString: Untagged
+  m_TagString: Seat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -759,6 +760,19 @@ Transform:
   m_Father: {fileID: 1632739846493096430}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &8848034633162394955
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1632739845756265763}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.8211856, y: 0.8137517, z: 3.0571966}
+  m_Center: {x: -0.4105928, y: 0.09312415, z: -0.08889127}
 --- !u!1 &1632739846481132010
 GameObject:
   m_ObjectHideFlags: 0
@@ -818,6 +832,7 @@ GameObject:
   - component: {fileID: 1632739846493096430}
   - component: {fileID: 1632739846493096431}
   - component: {fileID: 1632739846493096400}
+  - component: {fileID: 4330015129825938786}
   m_Layer: 0
   m_Name: ROULETTE
   m_TagString: Untagged
@@ -840,6 +855,7 @@ Transform:
   - {fileID: 1632739845370612878}
   - {fileID: 6837297699742472394}
   - {fileID: 1632739845260218137}
+  - {fileID: 5679831960203155805}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -894,6 +910,50 @@ MonoBehaviour:
   fWaitTime: 5
   customerLimit: 7
   spwanCount: 9
+--- !u!114 &4330015129825938786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1632739846493096429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b383bb61faad53b4597d113ab8a7ec0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Cart: []
+  cartPosition: {fileID: 5679831960203155805}
+--- !u!1 &1740757314812318936
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5679831960203155805}
+  m_Layer: 0
+  m_Name: Inventory
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5679831960203155805
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1740757314812318936}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.296, y: 0, z: 0.406}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1632739846493096430}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1868124814510383170
 GameObject:
   m_ObjectHideFlags: 0
@@ -1748,14 +1808,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 988d8ca426dd6364a98d4c1d153bad42, type: 3}
---- !u!4 &1234568215833653480 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 988d8ca426dd6364a98d4c1d153bad42, type: 3}
-  m_PrefabInstance: {fileID: 1632739845631497987}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1903265540276808274 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 988d8ca426dd6364a98d4c1d153bad42, type: 3}
+  m_PrefabInstance: {fileID: 1632739845631497987}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1234568215833653480 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 988d8ca426dd6364a98d4c1d153bad42, type: 3}
   m_PrefabInstance: {fileID: 1632739845631497987}
   m_PrefabAsset: {fileID: 0}
 --- !u!64 &1632739846929721171

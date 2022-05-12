@@ -31,6 +31,9 @@ public class controlChipsObjects : MonoBehaviour
         controlMoney = FindObjectOfType<controlMoneyUI>();
 
         GetComponent<Rigidbody>().AddForce(new Vector3(Random.Range(-1f * force, 1f * force), Random.Range(-1f * force, 1f * force) * 3, Random.Range(-1f * force, 1f * force)), ForceMode.Impulse);
+        LeanTween.delayedCall(1.5f, () => {
+            GetComponent<Rigidbody>().isKinematic = true;
+        });
     }
 
     // Update is called once per frame
@@ -77,7 +80,8 @@ public class controlChipsObjects : MonoBehaviour
         UI.SetActive(true);
         UI.transform.position = Camera.main.WorldToScreenPoint(transform.position);
         RectTransform RUI = UI.GetComponent<RectTransform>();
-        LeanTween.move(RUI, new Vector3(0f, 0f, 0f), 0.5f).setOnComplete(() =>
+
+        LeanTween.moveLocal(UI, controlMoney.cashPosition.localPosition, 0.5f).setOnComplete(() =>
         {
             RUI.gameObject.SetActive(false);
             controlMoney.CashUI.Add(RUI);
@@ -85,7 +89,7 @@ public class controlChipsObjects : MonoBehaviour
         });
     }
 
-    private void OnCollisionEnter(Collision collision)
+/*    private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
@@ -94,9 +98,9 @@ public class controlChipsObjects : MonoBehaviour
             });
             
             //GetComponent<Collider>().isTrigger = true;
-            /*transform.rotation = Quaternion.Euler(0, 0, 0);*/
+            *//*transform.rotation = Quaternion.Euler(0, 0, 0);*//*
         }
-    }
+    }*/
 
 
     private void OnTriggerEnter(Collider other)

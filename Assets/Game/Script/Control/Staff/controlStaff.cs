@@ -10,7 +10,10 @@ public class controlStaff : MonoBehaviour
     [SerializeField] private Vector3 startPosition;
     [SerializeField] private Collider Collector;
     public Transform Inventory;
+    public controlChipSpwanner seatChipController;
 
+    public float cartUpdateSpeed = 0.4f;
+    public bool isSeatNearBy;
     public bool SellItemInVault;
     public int maxLimit;
     private moveStaff moveStaff;
@@ -87,40 +90,99 @@ public class controlStaff : MonoBehaviour
     }
     public void ArrangeObjectInCart()
     {
-      /*  if (Cart.Count == 1)
+        if (Cart.Count == 1)
         {
             Cart[0].transform.GetComponent<controlChipsObjects>().EndPosition = startPosition;
-            return;
-        }*/
-         if (Cart.Count > 0)
-         {
-             Cart[Cart.Count - 1].GetComponent<controlChipsObjects>().EndPosition =
-                 new Vector3(Cart[Cart.Count - 2].GetComponent<controlChipsObjects>().EndPosition.x,
-                 Cart[Cart.Count - 2].GetComponent<controlChipsObjects>().EndPosition.y + 0.12f,
-                 Cart[Cart.Count - 2].GetComponent<controlChipsObjects>().EndPosition.z);
-             return;
-         }
-    }
-
-    public void onTouchChips(Collider col)
-    {
-        if (!col.GetComponent<controlChipsObjects>().isStacked)
-        {
-            col.transform.GetComponent<controlChipsObjects>().isStacked = true;
-            col.transform.parent = Inventory;
-            col.transform.GetComponent<controlChipsObjects>().isMove = true;
-            col.transform.GetComponent<Rigidbody>().isKinematic = true;
-            col.transform.GetComponent<Collider>().isTrigger = true;
-            col.transform.rotation = Quaternion.Euler(0, 0, 0);
-            if (!Cart.Contains(col.gameObject))
-            {
-                Cart.Add(col.gameObject);
-            }
+            Cart[Cart.Count - 1].transform.GetComponent<controlChipsObjects>().isPlayerCollected = true;
+            Cart[Cart.Count - 1].transform.GetComponent<controlChipsObjects>().isStacked = true;
+            Cart[Cart.Count - 1].transform.GetComponent<controlChipsObjects>().isMove = true;
             return;
         }
+        if (Cart.Count > 1)
+        {
+            Cart[Cart.Count - 1].GetComponent<controlChipsObjects>().EndPosition =
+                new Vector3(Cart[Cart.Count - 2].GetComponent<controlChipsObjects>().EndPosition.x,
+                Cart[Cart.Count - 2].GetComponent<controlChipsObjects>().EndPosition.y + 0.12f,
+                Cart[Cart.Count - 2].GetComponent<controlChipsObjects>().EndPosition.z);
+            Cart[Cart.Count - 1].transform.GetComponent<controlChipsObjects>().isPlayerCollected = true;
+            Cart[Cart.Count - 1].transform.GetComponent<controlChipsObjects>().isStacked = true;
+            Cart[Cart.Count - 1].transform.GetComponent<controlChipsObjects>().isMove = true;
+
+            return;
+        }
+
+        /*  if (Cart.Count == 1)
+          {
+              Cart[0].transform.GetComponent<controlChipsObjects>().EndPosition = startPosition;
+              return;
+          }*//*
+           if (Cart.Count > 0)
+           {
+               Cart[Cart.Count - 1].GetComponent<controlChipsObjects>().EndPosition =
+                   new Vector3(Cart[Cart.Count - 2].GetComponent<controlChipsObjects>().EndPosition.x,
+                   Cart[Cart.Count - 2].GetComponent<controlChipsObjects>().EndPosition.y + 0.12f,
+                   Cart[Cart.Count - 2].GetComponent<controlChipsObjects>().EndPosition.z);
+               return;
+           }*/
     }
 
-    private void OnTriggerEnter(Collider other)
+    float xT = 0.2f;
+    public void onTouchChips(Collider col)
+    {
+        if (maxLimit > 0)
+        {
+            if (xT > 0)
+                xT -= Time.deltaTime;
+            if (xT <= 0)
+            {
+                print(xT);
+                try
+                {
+                    if (seatChipController && seatChipController.Cart.Count > 0)
+                    {
+                        controlChipSpwanner c = seatChipController;
+
+                        if (!Cart.Contains(c.Cart[c.Cart.Count - 1]))
+                        {
+                            Cart.Add(c.Cart[c.Cart.Count - 1]);                            
+                        }
+                        Cart[Cart.Count - 1].transform.parent = Inventory;
+
+                        c.Cart.Remove(c.Cart[c.Cart.Count - 1]);
+
+                        Cart[Cart.Count - 1].transform.rotation = Quaternion.Euler(0, 0, 0);
+                        x = cartUpdateSpeed;
+                        return;
+                    }
+                    {
+                        print("Seat Controller Missing !");
+                    }
+                }
+                catch
+                {
+                    print("ERROR !");
+                }
+            }
+        }
+
+        /*
+                if (!col.transform.GetComponent<controlChipsObjects>().isStacked)
+                {
+                    col.transform.GetComponent<controlChipsObjects>().isStacked = true;
+                    col.transform.parent = Inventory;
+                    col.transform.GetComponent<controlChipsObjects>().isMove = true;
+                    col.transform.GetComponent<Rigidbody>().isKinematic = true;
+                    col.transform.GetComponent<Collider>().isTrigger = true;
+                    col.transform.rotation = Quaternion.Euler(0, 0, 0);
+                    if (!Cart.Contains(col.gameObject))
+                    {
+                        Cart.Add(col.gameObject);
+                    }
+                    return;
+                }*/
+    }
+
+    /*private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Chip") && !other.transform.GetComponent<controlChipsObjects>().isMove)
         {
@@ -130,17 +192,23 @@ public class controlStaff : MonoBehaviour
                 ArrangeObjectInCart();
             }
         }
-    }
+    }*/
+
+
+    
     private void OnCollisionEnter(Collision other)
     {
-       /* if (other.gameObject.CompareTag("Chip") && !other.transform.GetComponent<controlChipsObjects>().isMove)
-        {
-            if (Cart.Count <= maxLimit)
-            {
-                onTouchChips(other);
-                ArrangeObjectInCart();
-            }
-        }*/
+
+      
+
+        /* if (other.gameObject.CompareTag("Chip") && !other.transform.GetComponent<controlChipsObjects>().isMove)
+         {
+             if (Cart.Count <= maxLimit)
+             {
+                 onTouchChips(other);
+                 ArrangeObjectInCart();
+             }
+         }*/
     }
 
     private void OnTriggerStay(Collider other)
@@ -152,6 +220,16 @@ public class controlStaff : MonoBehaviour
                 SellItemInVault = true;
             }
         }
+        if (other.gameObject.CompareTag("Seat") && moveStaff.agent.velocity.magnitude <= 0)
+        {
+            if (!isSeatNearBy)
+            {
+                isSeatNearBy = true;
+                seatChipController = other.transform.GetComponentInParent<controlChipSpwanner>();
+            }
+            onTouchChips(other);
+            ArrangeObjectInCart();
+        }
     }
     private void OnTriggerExit(Collider other)
     {
@@ -160,6 +238,14 @@ public class controlStaff : MonoBehaviour
             if (SellItemInVault)
             {
                 SellItemInVault = false;
+            }
+        }
+        if (other.gameObject.CompareTag("Seat"))
+        {
+            if (isSeatNearBy)
+            {
+                isSeatNearBy = false;
+                seatChipController = null;
             }
         }
     }

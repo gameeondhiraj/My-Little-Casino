@@ -746,6 +746,36 @@ MonoBehaviour:
   isLocked: 0
   rotationFace: 180
   CustomerSpwan: {fileID: 6848882341300212682}
+--- !u!1 &2311172128862673543
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3944924691734767018}
+  m_Layer: 0
+  m_Name: Inventory
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3944924691734767018
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2311172128862673543}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.296, y: 0, z: 0.406}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6848882341300212683}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3001727986633907073
 GameObject:
   m_ObjectHideFlags: 0
@@ -1170,9 +1200,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6848882339889577729}
-  m_Layer: 0
+  - component: {fileID: 1836088558651677222}
+  m_Layer: 15
   m_Name: GFX
-  m_TagString: Untagged
+  m_TagString: Seat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1193,6 +1224,19 @@ Transform:
   m_Father: {fileID: 6848882341300212683}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1836088558651677222
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6848882339889577734}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.8211856, y: 0.8137517, z: 3.0571966}
+  m_Center: {x: -0.4105928, y: 0.09312415, z: -0.08889127}
 --- !u!1 &6848882340435940669
 GameObject:
   m_ObjectHideFlags: 0
@@ -1526,6 +1570,7 @@ GameObject:
   - component: {fileID: 6848882341300212683}
   - component: {fileID: 6848882341300212682}
   - component: {fileID: 6848882341300212725}
+  - component: {fileID: 7964284889315333189}
   m_Layer: 0
   m_Name: BLACKJACK
   m_TagString: Untagged
@@ -1548,6 +1593,7 @@ Transform:
   - {fileID: 6848882340543649451}
   - {fileID: 8885004577216054317}
   - {fileID: 6848882340435940668}
+  - {fileID: 3944924691734767018}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1602,6 +1648,20 @@ MonoBehaviour:
   fWaitTime: 5
   customerLimit: 5
   spwanCount: 7
+--- !u!114 &7964284889315333189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6848882341300212680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b383bb61faad53b4597d113ab8a7ec0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Cart: []
+  cartPosition: {fileID: 3944924691734767018}
 --- !u!1 &7668959213188059349
 GameObject:
   m_ObjectHideFlags: 0

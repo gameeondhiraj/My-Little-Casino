@@ -7,17 +7,20 @@ namespace Casino.Control
     {
         public List<GameObject> Cart = new List<GameObject>();
         [SerializeField] private Vector3 StartPosition;
+
+        public controlChipSpwanner seatChipController;
+
         public Transform cartTransform;
         public Collider cashCollector;
-
         public int MaxLimit;
         public int CurrentLimit;
         public float cartUpdateSpeed;
 
 
+
+        public bool isSeatNearBy;
         private bool SellItemInVault;
         private Transform VaultPodition;
-
         private movePlayer movePlayer;
         private AudioManager AudioManager;
 
@@ -36,10 +39,6 @@ namespace Casino.Control
            // if (Cart.Count >= MaxLimit)cashCollector.isTrigger = true; else { cashCollector.isTrigger = false; }
         }
 
-        private void FixedUpdate()
-        {
-            
-        }
         void clear()
         {
             for (int i = 0; i <= Cart.Count - 1; i++)
@@ -73,29 +72,75 @@ namespace Casino.Control
         }
         public void ArrangeObjectInCart()
         {
-           /* if (Cart.Count == 1)
+            if (Cart.Count == 1)
             {
                 Cart[0].transform.GetComponent<controlChipsObjects>().EndPosition = StartPosition;
+                Cart[Cart.Count - 1].transform.GetComponent<controlChipsObjects>().isPlayerCollected = true;
+                Cart[Cart.Count - 1].transform.GetComponent<controlChipsObjects>().isStacked = true;
+                Cart[Cart.Count - 1].transform.GetComponent<controlChipsObjects>().isMove = true;
                 return;
-            }*/
-            if (Cart.Count > 0)
+            }
+            if (Cart.Count > 1)
             {
                 Cart[Cart.Count - 1].GetComponent<controlChipsObjects>().EndPosition =
                     new Vector3(Cart[Cart.Count - 2].GetComponent<controlChipsObjects>().EndPosition.x,
                     Cart[Cart.Count - 2].GetComponent<controlChipsObjects>().EndPosition.y + 0.12f,
                     Cart[Cart.Count - 2].GetComponent<controlChipsObjects>().EndPosition.z);
+                Cart[Cart.Count - 1].transform.GetComponent<controlChipsObjects>().isPlayerCollected = true;
+                Cart[Cart.Count - 1].transform.GetComponent<controlChipsObjects>().isStacked = true;
+                Cart[Cart.Count - 1].transform.GetComponent<controlChipsObjects>().isMove = true;
+
                 return;
             }
         }
+
+        float xT = 0.2f;
         public void onTouchChips(Collider col)
         {
-            /*   if (Cart.Count < 1)
-               {
-                   col.transform.parent = cartTransform;
-                   col.transform.GetComponent<controlChipsObjects>().isMove = true;
-               }*/
+            if (MaxLimit > 0)
+            {
+                if (xT > 0)
+                    xT -= Time.deltaTime;
+                if (xT <= 0)
+                {
+                    print(xT);
+                    try
+                    {
+                        if (seatChipController && seatChipController.Cart.Count>0)
+                        {
+                            controlChipSpwanner c = seatChipController;
 
-            if (!col.GetComponent<controlChipsObjects>().isStacked)
+                            if(!Cart.Contains(c.Cart[c.Cart.Count - 1]))
+                            {
+                                Cart.Add(c.Cart[c.Cart.Count - 1]);
+                                AudioManager.source.PlayOneShot(AudioManager.collectChip);
+                            }                            
+                            Cart[Cart.Count - 1].transform.parent = cartTransform;
+                            
+                            c.Cart.Remove(c.Cart[c.Cart.Count - 1]);
+
+                            Cart[Cart.Count - 1].transform.rotation = Quaternion.Euler(0, 0, 0);
+                            x = cartUpdateSpeed;
+                            return;
+                        }
+                        {
+                            print("Seat Controller Missing !");
+                        }
+                    }
+                    catch
+                    {
+                        print("ERROR !");
+                    }
+                }
+            }
+
+
+
+
+
+
+
+          /*  if (!col.GetComponent<controlChipsObjects>().isStacked)
             {
                 col.transform.parent = cartTransform;
                 col.transform.GetComponent<controlChipsObjects>().isMove = true;
@@ -110,7 +155,7 @@ namespace Casino.Control
                     AudioManager.source.PlayOneShot(AudioManager.collectChip);
                 }
                 return;
-            }
+            }*/
         }
 
         float x = 0.01f;
@@ -148,14 +193,14 @@ namespace Casino.Control
         private void OnTriggerEnter(Collider other)
         {
 
-            if (other.gameObject.CompareTag("Chip") && !other.GetComponent<controlChipsObjects>().isMove)
+           /* if (other.gameObject.CompareTag("Chip") && !other.GetComponent<controlChipsObjects>().isMove)
             {
                 if (Cart.Count <= MaxLimit)
                 {
                     onTouchChips(other);
                     ArrangeObjectInCart();
                 }
-            }
+            }*/
         }
 
         private void OnTriggerStay(Collider other)
@@ -168,6 +213,16 @@ namespace Casino.Control
                     VaultPodition = other.transform;
                 }
             }
+            if (other.gameObject.CompareTag("Seat") && movePlayer.direction.magnitude <= 0)
+            {
+                if (!isSeatNearBy)
+                {
+                    isSeatNearBy = true;
+                    seatChipController = other.GetComponentInParent<controlChipSpwanner>();                    
+                }
+                onTouchChips(other);
+                ArrangeObjectInCart();
+            }
         }
         private void OnTriggerExit(Collider other)
         {
@@ -177,6 +232,15 @@ namespace Casino.Control
                 {
                     SellItemInVault = false;
                     VaultPodition = null;
+                }
+            }
+
+            if (other.gameObject.CompareTag("Seat"))
+            {
+                if (isSeatNearBy)
+                {
+                    isSeatNearBy = false;
+                    seatChipController = null;
                 }
             }
         }

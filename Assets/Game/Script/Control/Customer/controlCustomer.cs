@@ -68,7 +68,8 @@ public class controlCustomer : MonoBehaviour
             {
                 GameObject c = Instantiate(chips, ChipSpwanPosition.position, Quaternion.identity);
                 c.GetComponent<controlChipsObjects>().section = section;
-                
+                c.GetComponent<controlChipForStack>().seatChipController = moveCustomer.DestinationToSeat.GetComponent<controlChipSpwanner>();
+
 
                 if (i >= chipSpwanCount - 1)
                 {

@@ -114,6 +114,7 @@ public class controlTable : MonoBehaviour
 
                 c.GetComponent<controlChipsObjects>().section = CustomerSpwan.section;
                 c.GetComponent<controlChipsObjects>().force = 5f;
+                c.GetComponent<controlChipForStack>().seatChipController = GetComponent<controlChipSpwanner>();
 
                 if (i >= spwanCount - 1)
                 {
