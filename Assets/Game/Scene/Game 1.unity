@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.11267188, g: 0.28153452, b: 0.70918214, a: 1}
+  m_IndirectSpecularColor: {r: 0.108082354, g: 0.54222184, b: 1.4878572, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -21491,6 +21491,7 @@ MonoBehaviour:
   UnlockedObject: {fileID: 1052771376}
   isPlayerNear: 0
   isLocked: 1
+  t: {fileID: 2044051186}
 --- !u!54 &1310010060
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -22236,6 +22237,10 @@ PrefabInstance:
       propertyPath: cinemachineCamera
       value: 
       objectReference: {fileID: 1384263383}
+    - target: {fileID: 7637215307621238789, guid: 82c46560e6bc2e346a4be3e92bf40e34, type: 3}
+      propertyPath: speed
+      value: 6.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7637215307621238789, guid: 82c46560e6bc2e346a4be3e92bf40e34, type: 3}
       propertyPath: Joystick
       value: 
@@ -23342,7 +23347,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf3702b6baf3f5d4ba3d467954a9e33c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isTest: 1
+  isTest: 0
   CustomerSpwan: {fileID: 343194348}
   Cash: 1500
   ChipSpwanCount: 10
@@ -24868,6 +24873,7 @@ MonoBehaviour:
   UnlockedObject: {fileID: 465104507}
   isPlayerNear: 0
   isLocked: 1
+  t: {fileID: 0}
 --- !u!4 &1471137680 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000010156700966, guid: 03efb12d920ca45feb97c225e20f3815, type: 3}
@@ -33851,6 +33857,7 @@ MonoBehaviour:
   UnlockedObject: {fileID: 772862505}
   isPlayerNear: 0
   isLocked: 1
+  t: {fileID: 0}
 --- !u!1001 &2055864054
 PrefabInstance:
   m_ObjectHideFlags: 0

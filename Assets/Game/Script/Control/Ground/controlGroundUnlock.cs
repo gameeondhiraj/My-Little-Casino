@@ -21,12 +21,15 @@ public class controlGroundUnlock : MonoBehaviour
     public bool isPlayerNear;
     public bool isLocked;
 
+    private GameObject Player;
     private GameManager GameManager;
     private AudioManager AudioManager;
+    private controlMoneyUI controlMoney;
     void Start()
     {
         GameManager = FindObjectOfType<GameManager>();
         AudioManager = FindObjectOfType<AudioManager>();
+        controlMoney = FindObjectOfType<controlMoneyUI>();
         unlocked();
     }
     void unlocked()
@@ -61,20 +64,53 @@ public class controlGroundUnlock : MonoBehaviour
         if (isLocked && isPlayerNear)
             moneyReducer();
     }
+    float x = 0.15f;
     void moneyReducer()
     {
         if (unlockingAmount > 0 && GameManager.maxCash > 0)
         {
             unlockingAmount -= reduceAmountSpeed * Time.deltaTime;
             GameManager.maxCash -= reduceAmountSpeed * Time.deltaTime;
+            if (unlockingAmount > 5)
+            {
+                if (x > 0)
+                    x -= Time.deltaTime;
+                if (x <= 0)
+                {
+                    moneyDeductationUI();
+                    x = 0.15f;
+                }
+            }
         }
+    }
+
+    public Transform t;
+    void moneyDeductationUI()
+    {
+        GameObject UI = controlMoney.CashUI[controlMoney.CashUI.Count - 1].gameObject;
+        controlMoney.CashUI.Remove(controlMoney.CashUI[controlMoney.CashUI.Count - 1]);
+        UI.SetActive(true);
+
+        UI.transform.position = Camera.main.WorldToScreenPoint(Player.transform.position + new Vector3(0, 1f, 0));
+        controlMoney.SlotMachinePosition.position = Camera.main.WorldToScreenPoint(t.position);
+
+        LeanTween.moveLocal(UI, controlMoney.SlotMachinePosition.localPosition, .5f).setOnComplete(() =>
+        {
+            //UI.transform.position = Camera.main.WorldToScreenPoint(Player.transform.position + new Vector3(0, 2, 0));
+            UI.SetActive(false);
+            controlMoney.CashUI.Add(UI.transform);
+        });
     }
     private void OnTriggerStay(Collider other)
     {
         try
         {
-            if (other.gameObject.CompareTag("Player") && other.gameObject.GetComponent<movePlayer>().direction.magnitude < 0.1f) isPlayerNear = true;
-        }
+            if (other.gameObject.CompareTag("Player") && other.gameObject.GetComponent<movePlayer>().direction.magnitude < 0.1f)
+            {
+                isPlayerNear = true;
+                Player = other.gameObject;
+            }
+            }
         catch
         {
         }
@@ -82,7 +118,12 @@ public class controlGroundUnlock : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         if (isPlayerNear)
+        {
+
+            Player = null;
             isPlayerNear = false;
+        }
+            
     }
 
 }
