@@ -113,8 +113,8 @@ public class controlTable : MonoBehaviour
                 GameObject c = Instantiate(chips, chipSpwanPositionList[Random.Range(0,chipSpwanPositionList.Count-1)].position, Quaternion.identity);
 
                 c.GetComponent<controlChipsObjects>().section = CustomerSpwan.section;
-                c.GetComponent<controlChipsObjects>().force = 5f;
                 c.GetComponent<controlChipForStack>().seatChipController = GetComponent<controlChipSpwanner>();
+                c.GetComponent<controlChipsObjects>().force = 5f;
 
                 if (i >= spwanCount - 1)
                 {

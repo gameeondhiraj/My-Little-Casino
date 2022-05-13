@@ -213,7 +213,7 @@ namespace Casino.Control
                     VaultPodition = other.transform;
                 }
             }
-            if (other.gameObject.CompareTag("Seat") && movePlayer.direction.magnitude <= 0)
+            if (other.gameObject.CompareTag("Seat") /*&& movePlayer.direction.magnitude <= 0*/)
             {
                 if (!isSeatNearBy)
                 {

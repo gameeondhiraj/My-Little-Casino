@@ -11,10 +11,14 @@ public class controlChipForStack : MonoBehaviour
     void Start()
     {
         controlChips = GetComponent<controlChipsObjects>();
-          LeanTween.delayedCall(0.5f, () => {
-              onTouch();
-          });
+        StartCoroutine(delayCall(0.5f));
         
+    }
+
+    IEnumerator delayCall(float t)
+    {
+        yield return new WaitForSeconds(t);
+        onTouch();
     }
 
     // Update is called once per frame

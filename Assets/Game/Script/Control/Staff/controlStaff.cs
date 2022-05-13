@@ -93,7 +93,6 @@ public class controlStaff : MonoBehaviour
         if (Cart.Count == 1)
         {
             Cart[0].transform.GetComponent<controlChipsObjects>().EndPosition = startPosition;
-            Cart[Cart.Count - 1].transform.GetComponent<controlChipsObjects>().isPlayerCollected = true;
             Cart[Cart.Count - 1].transform.GetComponent<controlChipsObjects>().isStacked = true;
             Cart[Cart.Count - 1].transform.GetComponent<controlChipsObjects>().isMove = true;
             return;
@@ -104,7 +103,6 @@ public class controlStaff : MonoBehaviour
                 new Vector3(Cart[Cart.Count - 2].GetComponent<controlChipsObjects>().EndPosition.x,
                 Cart[Cart.Count - 2].GetComponent<controlChipsObjects>().EndPosition.y + 0.12f,
                 Cart[Cart.Count - 2].GetComponent<controlChipsObjects>().EndPosition.z);
-            Cart[Cart.Count - 1].transform.GetComponent<controlChipsObjects>().isPlayerCollected = true;
             Cart[Cart.Count - 1].transform.GetComponent<controlChipsObjects>().isStacked = true;
             Cart[Cart.Count - 1].transform.GetComponent<controlChipsObjects>().isMove = true;
 

@@ -39,8 +39,7 @@ public class moveStaff : MonoBehaviour
     void Update()
     {
         moveAndRotateTowardTarget();
-        if(ControlStaff.Cart.Count <= ControlStaff.maxLimit)
-            getChipLocation();
+        getChipLocation();
         SETTARGETS();
     }
     void moveAndRotateTowardTarget()
@@ -61,20 +60,26 @@ public class moveStaff : MonoBehaviour
             anime.SetBool("hold", false);
         }
     }
-    void getChipLocation()
+    public void getChipLocation()
     {
-        if (TargetToChip==null && section.chips.Count > 0)
+        if(ControlStaff.Cart.Count <= ControlStaff.maxLimit)
         {
-            if(!section.chips[section.chips.Count - 1].GetComponent<controlChipsObjects>().isOccupied)
+            if (TargetToChip == null && section.chips.Count > 0)
             {
-                TargetToChip = section.chips[section.chips.Count - 1].transform;
-                TargetToChip.GetComponent<controlChipsObjects>().isOccupied = true;
-            }            
+                if (!section.chips[section.chips.Count - 1].GetComponent<controlChipsObjects>().isOccupied)
+                {
+                    TargetToChip = section.chips[section.chips.Count - 1].transform;
+                    section.chips[section.chips.Count - 1].GetComponent<controlChipsObjects>().isOccupied = true;
+                }
+            }
         }
-        if(TargetToChip && TargetToChip.GetComponent<controlChipsObjects>().isStacked)
+       
+
+        if (TargetToChip && TargetToChip.GetComponent<controlChipsObjects>().isStacked)
         {
             TargetToChip = null;
         }
+        
     }
     void SETTARGETS()
     {
@@ -100,8 +105,8 @@ public class moveStaff : MonoBehaviour
             }           
         }
 
-        if (isWakTowardVault) agent.SetDestination(TargetToVault.position);
-        if (TargetToChip && isWalkTowardChip) agent.SetDestination(TargetToChip.position);
+        if (isWakTowardVault) agent.SetDestination(new Vector3(TargetToVault.position.x, 0.2f, TargetToVault.position.z));
+        if (TargetToChip && isWalkTowardChip) agent.SetDestination(new Vector3(TargetToChip.position.x, 0.2f, TargetToChip.position.z));
         if (isWalkTowardInitPosition) agent.SetDestination(TargetToInitPosition.position);
     }
 }

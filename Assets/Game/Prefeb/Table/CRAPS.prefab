@@ -345,7 +345,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 413511628665848610}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.344, y: 0, z: -0.006}
+  m_LocalPosition: {x: 0.82, y: 0, z: 0.406}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4968826711100647410}
@@ -1420,7 +1420,7 @@ MonoBehaviour:
   iWaitTimer: {fileID: 4968826710603004082}
   fWaitTime: 5
   customerLimit: 7
-  spwanCount: 11
+  spwanCount: 21
 --- !u!114 &1318605283279190092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1435,6 +1435,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Cart: []
   cartPosition: {fileID: 7820148193061656460}
+  isTable: 1
 --- !u!1 &4968826711242335556
 GameObject:
   m_ObjectHideFlags: 0

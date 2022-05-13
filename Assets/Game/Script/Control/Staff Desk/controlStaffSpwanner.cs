@@ -86,7 +86,7 @@ public class controlStaffSpwanner : MonoBehaviour
         {
             if (other.gameObject.CompareTag("Player") && other.gameObject.GetComponent<movePlayer>().direction.magnitude < 0.1f)
             {
-                if (GameManager.Level >= 4) isPlayerNear = true;
+                if (GameManager.Level >= 3) isPlayerNear = true;
             }
         }
         catch
